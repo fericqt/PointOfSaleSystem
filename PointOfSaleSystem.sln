@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleSystem", "PointOfSaleSystem\PointOfSaleSystem.csproj", "{9ACCFDF0-A3DF-4BCF-938E-128A5C5316AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleDB", "PointOfSaleDB\PointOfSaleDB.csproj", "{ADDCD587-0618-43A3-8FEF-75A4F60D3DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleBL", "PointOfSaleBL\PointOfSaleBL.csproj", "{9B6E43F7-F70B-4083-9A0F-61059D3042A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleSettings", "PointOfSaleSettings\PointOfSaleSettings.csproj", "{6F0E3D95-4E9A-4B80-AEAE-89ED2BE6D16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleReports", "PointOfSaleReports\PointOfSaleReports.csproj", "{28BF71A0-9529-4339-8FDF-43C8624006B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleForms", "PointOfSaleForms\PointOfSaleForms.csproj", "{35C6AAA1-5125-42B0-BA57-16671A80E4B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ACCFDF0-A3DF-4BCF-938E-128A5C5316AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACCFDF0-A3DF-4BCF-938E-128A5C5316AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACCFDF0-A3DF-4BCF-938E-128A5C5316AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACCFDF0-A3DF-4BCF-938E-128A5C5316AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDCD587-0618-43A3-8FEF-75A4F60D3DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDCD587-0618-43A3-8FEF-75A4F60D3DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDCD587-0618-43A3-8FEF-75A4F60D3DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDCD587-0618-43A3-8FEF-75A4F60D3DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B6E43F7-F70B-4083-9A0F-61059D3042A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B6E43F7-F70B-4083-9A0F-61059D3042A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B6E43F7-F70B-4083-9A0F-61059D3042A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B6E43F7-F70B-4083-9A0F-61059D3042A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0E3D95-4E9A-4B80-AEAE-89ED2BE6D16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0E3D95-4E9A-4B80-AEAE-89ED2BE6D16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0E3D95-4E9A-4B80-AEAE-89ED2BE6D16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0E3D95-4E9A-4B80-AEAE-89ED2BE6D16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BF71A0-9529-4339-8FDF-43C8624006B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BF71A0-9529-4339-8FDF-43C8624006B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BF71A0-9529-4339-8FDF-43C8624006B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BF71A0-9529-4339-8FDF-43C8624006B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C6AAA1-5125-42B0-BA57-16671A80E4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C6AAA1-5125-42B0-BA57-16671A80E4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C6AAA1-5125-42B0-BA57-16671A80E4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C6AAA1-5125-42B0-BA57-16671A80E4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55A27FE4-426B-4589-818E-DF90FB13F99F}
+	EndGlobalSection
+EndGlobal
