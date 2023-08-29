@@ -37,9 +37,9 @@ namespace PointOfSaleSystem.UserControlFolder
             this.customButton6 = new FerPROJ.CustomButton();
             this.customButton7 = new FerPROJ.CustomButton();
             this.customGroupBox1 = new FerPROJ.FerCONTROLS.CustomGroupBox();
-            this.customButton4 = new FerPROJ.CustomButton();
-            this.customButton3 = new FerPROJ.CustomButton();
-            this.customButton2 = new FerPROJ.CustomButton();
+            this.manufacturerCustomButton = new FerPROJ.CustomButton();
+            this.uomCustomButton = new FerPROJ.CustomButton();
+            this.productCatCustomButton = new FerPROJ.CustomButton();
             this.productListCustomButton = new FerPROJ.CustomButton();
             this.customLabelTitle1 = new FerPROJ.FerCONTROLS.CustomLabelTitle();
             this.customPanel1.SuspendLayout();
@@ -180,9 +180,9 @@ namespace PointOfSaleSystem.UserControlFolder
             // customGroupBox1
             // 
             this.customGroupBox1.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.customGroupBox1.Controls.Add(this.customButton4);
-            this.customGroupBox1.Controls.Add(this.customButton3);
-            this.customGroupBox1.Controls.Add(this.customButton2);
+            this.customGroupBox1.Controls.Add(this.manufacturerCustomButton);
+            this.customGroupBox1.Controls.Add(this.uomCustomButton);
+            this.customGroupBox1.Controls.Add(this.productCatCustomButton);
             this.customGroupBox1.Controls.Add(this.productListCustomButton);
             this.customGroupBox1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customGroupBox1.Location = new System.Drawing.Point(53, 80);
@@ -193,62 +193,65 @@ namespace PointOfSaleSystem.UserControlFolder
             this.customGroupBox1.TabStop = false;
             this.customGroupBox1.Text = "PRODUCTS AREA";
             // 
-            // customButton4
+            // manufacturerCustomButton
             // 
-            this.customButton4.BackColor = System.Drawing.Color.Silver;
-            this.customButton4.BackgroundColor = System.Drawing.Color.Silver;
-            this.customButton4.BorderColor = System.Drawing.Color.Green;
-            this.customButton4.BorderRadius = 20;
-            this.customButton4.BorderSize = 0;
-            this.customButton4.FlatAppearance.BorderSize = 0;
-            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton4.Font = new System.Drawing.Font("Poppins", 9F);
-            this.customButton4.ForeColor = System.Drawing.Color.Black;
-            this.customButton4.Location = new System.Drawing.Point(214, 114);
-            this.customButton4.Name = "customButton4";
-            this.customButton4.Size = new System.Drawing.Size(150, 40);
-            this.customButton4.TabIndex = 3;
-            this.customButton4.Text = "Products";
-            this.customButton4.TextColor = System.Drawing.Color.Black;
-            this.customButton4.UseVisualStyleBackColor = false;
+            this.manufacturerCustomButton.BackColor = System.Drawing.Color.Silver;
+            this.manufacturerCustomButton.BackgroundColor = System.Drawing.Color.Silver;
+            this.manufacturerCustomButton.BorderColor = System.Drawing.Color.Green;
+            this.manufacturerCustomButton.BorderRadius = 20;
+            this.manufacturerCustomButton.BorderSize = 0;
+            this.manufacturerCustomButton.FlatAppearance.BorderSize = 0;
+            this.manufacturerCustomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manufacturerCustomButton.Font = new System.Drawing.Font("Poppins", 9F);
+            this.manufacturerCustomButton.ForeColor = System.Drawing.Color.Black;
+            this.manufacturerCustomButton.Location = new System.Drawing.Point(214, 114);
+            this.manufacturerCustomButton.Name = "manufacturerCustomButton";
+            this.manufacturerCustomButton.Size = new System.Drawing.Size(150, 40);
+            this.manufacturerCustomButton.TabIndex = 3;
+            this.manufacturerCustomButton.Text = "Product Manufacturer";
+            this.manufacturerCustomButton.TextColor = System.Drawing.Color.Black;
+            this.manufacturerCustomButton.UseVisualStyleBackColor = false;
+            this.manufacturerCustomButton.Click += new System.EventHandler(this.manufacturerCustomButton_Click);
             // 
-            // customButton3
+            // uomCustomButton
             // 
-            this.customButton3.BackColor = System.Drawing.Color.Silver;
-            this.customButton3.BackgroundColor = System.Drawing.Color.Silver;
-            this.customButton3.BorderColor = System.Drawing.Color.Green;
-            this.customButton3.BorderRadius = 20;
-            this.customButton3.BorderSize = 0;
-            this.customButton3.FlatAppearance.BorderSize = 0;
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Poppins", 9F);
-            this.customButton3.ForeColor = System.Drawing.Color.Black;
-            this.customButton3.Location = new System.Drawing.Point(18, 114);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(150, 40);
-            this.customButton3.TabIndex = 2;
-            this.customButton3.Text = "Product Unit";
-            this.customButton3.TextColor = System.Drawing.Color.Black;
-            this.customButton3.UseVisualStyleBackColor = false;
+            this.uomCustomButton.BackColor = System.Drawing.Color.Silver;
+            this.uomCustomButton.BackgroundColor = System.Drawing.Color.Silver;
+            this.uomCustomButton.BorderColor = System.Drawing.Color.Green;
+            this.uomCustomButton.BorderRadius = 20;
+            this.uomCustomButton.BorderSize = 0;
+            this.uomCustomButton.FlatAppearance.BorderSize = 0;
+            this.uomCustomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uomCustomButton.Font = new System.Drawing.Font("Poppins", 9F);
+            this.uomCustomButton.ForeColor = System.Drawing.Color.Black;
+            this.uomCustomButton.Location = new System.Drawing.Point(18, 114);
+            this.uomCustomButton.Name = "uomCustomButton";
+            this.uomCustomButton.Size = new System.Drawing.Size(150, 40);
+            this.uomCustomButton.TabIndex = 2;
+            this.uomCustomButton.Text = "Product Unit";
+            this.uomCustomButton.TextColor = System.Drawing.Color.Black;
+            this.uomCustomButton.UseVisualStyleBackColor = false;
+            this.uomCustomButton.Click += new System.EventHandler(this.uomCustomButton_Click);
             // 
-            // customButton2
+            // productCatCustomButton
             // 
-            this.customButton2.BackColor = System.Drawing.Color.Silver;
-            this.customButton2.BackgroundColor = System.Drawing.Color.Silver;
-            this.customButton2.BorderColor = System.Drawing.Color.Green;
-            this.customButton2.BorderRadius = 20;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Poppins", 9F);
-            this.customButton2.ForeColor = System.Drawing.Color.Black;
-            this.customButton2.Location = new System.Drawing.Point(214, 41);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(150, 40);
-            this.customButton2.TabIndex = 1;
-            this.customButton2.Text = "Product Category";
-            this.customButton2.TextColor = System.Drawing.Color.Black;
-            this.customButton2.UseVisualStyleBackColor = false;
+            this.productCatCustomButton.BackColor = System.Drawing.Color.Silver;
+            this.productCatCustomButton.BackgroundColor = System.Drawing.Color.Silver;
+            this.productCatCustomButton.BorderColor = System.Drawing.Color.Green;
+            this.productCatCustomButton.BorderRadius = 20;
+            this.productCatCustomButton.BorderSize = 0;
+            this.productCatCustomButton.FlatAppearance.BorderSize = 0;
+            this.productCatCustomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productCatCustomButton.Font = new System.Drawing.Font("Poppins", 9F);
+            this.productCatCustomButton.ForeColor = System.Drawing.Color.Black;
+            this.productCatCustomButton.Location = new System.Drawing.Point(214, 41);
+            this.productCatCustomButton.Name = "productCatCustomButton";
+            this.productCatCustomButton.Size = new System.Drawing.Size(150, 40);
+            this.productCatCustomButton.TabIndex = 1;
+            this.productCatCustomButton.Text = "Product Category";
+            this.productCatCustomButton.TextColor = System.Drawing.Color.Black;
+            this.productCatCustomButton.UseVisualStyleBackColor = false;
+            this.productCatCustomButton.Click += new System.EventHandler(this.productCatCustomButton_Click);
             // 
             // productListCustomButton
             // 
@@ -303,9 +306,9 @@ namespace PointOfSaleSystem.UserControlFolder
         private FerPROJ.FerCONTROLS.CustomLabelTitle customLabelTitle1;
         private FerPROJ.FerCONTROLS.CustomGroupBox customGroupBox1;
         private FerPROJ.FerCONTROLS.CustomGroupBox customGroupBox2;
-        private FerPROJ.CustomButton customButton4;
-        private FerPROJ.CustomButton customButton3;
-        private FerPROJ.CustomButton customButton2;
+        private FerPROJ.CustomButton manufacturerCustomButton;
+        private FerPROJ.CustomButton uomCustomButton;
+        private FerPROJ.CustomButton productCatCustomButton;
         private FerPROJ.CustomButton productListCustomButton;
         private FerPROJ.FerCONTROLS.CustomPanel customPanel2;
         private FerPROJ.CustomButton customButton5;

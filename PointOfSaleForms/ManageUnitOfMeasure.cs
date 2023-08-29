@@ -13,37 +13,38 @@ using System.Windows.Forms;
 
 namespace PointOfSaleForms
 {
-    public partial class ManageProduct : ManageFormSettings
+    public partial class ManageUnitOfMeasure : ManageFormSettings
     {
-        ProductDTO MyDTO = new ProductDTO();
-        public ManageProduct()
+        UnitOfMeasureDTO MyDTO = new UnitOfMeasureDTO();
+        public ManageUnitOfMeasure()
         {
             InitializeComponent();
         }
         protected override void LoadComponents()
         {
-            new ProductCategoryDB().LoadComboBox(prodCatCustomComboBox);
-            new UnitOfMeasureDB().LoadComboBox(uomCustomComboBox);
-            new ManufacturerDB().LoadComboBox(manufacturerCustomComboBox);
-
             switch (CurrentFormMode)
             {
                 case FormMode.Add:
                     break;
                 case FormMode.Update:
-                    MyDTO = new ProductDB().GetById(Manage_IdTrack);
+                    MyDTO = new UnitOfMeasureDB().GetById(Manage_IdTrack);
                     break;
-
             }
-            productDTOBindingSource.DataSource = MyDTO;
+            unitOfMeasureDTOBindingSource.DataSource = MyDTO;
         }
         protected override bool OnSaveData()
         {
-            return new ProductDB().SaveData(MyDTO);
+            return new UnitOfMeasureDB().SaveData(MyDTO);
         }
         protected override bool OnUpdateData()
         {
-            return new ProductDB().UpdateData(MyDTO);
+            return new UnitOfMeasureDB().UpdateData(MyDTO);
+        }
+        protected override bool OnSaveNewData()
+        {
+            MyDTO = new UnitOfMeasureDTO();
+            unitOfMeasureDTOBindingSource.DataSource = MyDTO;
+            return true;
         }
     }
 }

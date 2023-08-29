@@ -28,6 +28,36 @@ namespace PointOfSaleForms
                     return true;
                 }
             }
+            public bool ListOfProductCategory(bool manageMode, out string idTrack)
+            {
+                using (FrmProductCategory frm = new FrmProductCategory())
+                {
+                    frm.CurrentManageMode = manageMode;
+                    frm.ShowDialog();
+                    idTrack = frm.Form_IdTrack;
+                    return true;
+                }
+            }
+            public bool ListOfUnitOfMeasure(bool manageMode, out string idTrack)
+            {
+                using (FrmUnitOfMeasure frm = new FrmUnitOfMeasure())
+                {
+                    frm.CurrentManageMode = manageMode;
+                    frm.ShowDialog();
+                    idTrack = frm.Form_IdTrack;
+                    return true;
+                }
+            }
+            public bool ListOfManufacturer(bool manageMode, out string idTrack)
+            {
+                using (FrmManufacturer frm = new FrmManufacturer())
+                {
+                    frm.CurrentManageMode = manageMode;
+                    frm.ShowDialog();
+                    idTrack = frm.Form_IdTrack;
+                    return true;
+                }
+            }
         }
         public class ManageForm
         {
@@ -63,6 +93,36 @@ namespace PointOfSaleForms
             public bool ManageProduct(string idTrack, FormMode formMode)
             {
                 using (ManageProduct frm = new ManageProduct())
+                {
+                    frm.Manage_IdTrack = idTrack;
+                    frm.CurrentFormMode = formMode;
+                    frm.ShowDialog();
+                    return frm.CurrentFormResult;
+                }
+            }
+            public bool ManageProductCategory(string idTrack, FormMode formMode)
+            {
+                using (ManageProductCategory frm = new ManageProductCategory())
+                {
+                    frm.Manage_IdTrack = idTrack;
+                    frm.CurrentFormMode = formMode;
+                    frm.ShowDialog();
+                    return frm.CurrentFormResult;
+                }
+            }
+            public bool ManageUnitOfMeasure(string idTrack, FormMode formMode)
+            {
+                using (ManageUnitOfMeasure frm = new ManageUnitOfMeasure())
+                {
+                    frm.Manage_IdTrack = idTrack;
+                    frm.CurrentFormMode = formMode;
+                    frm.ShowDialog();
+                    return frm.CurrentFormResult;
+                }
+            }
+            public bool ManageManufacturer(string idTrack, FormMode formMode)
+            {
+                using (ManageManufacturer frm = new ManageManufacturer())
                 {
                     frm.Manage_IdTrack = idTrack;
                     frm.CurrentFormMode = formMode;

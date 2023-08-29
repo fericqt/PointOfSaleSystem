@@ -47,11 +47,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormLayer.cs" />
+    <Compile Include="FrmManufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManufacturer.Designer.cs">
+      <DependentUpon>FrmManufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductCategory.Designer.cs">
+      <DependentUpon>FrmProductCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProductList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmProductList.Designer.cs">
       <DependentUpon>FrmProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitOfMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitOfMeasure.Designer.cs">
+      <DependentUpon>FrmUnitOfMeasure.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUsers.cs">
       <SubType>Form</SubType>
@@ -59,11 +77,23 @@
     <Compile Include="FrmUsers.Designer.cs">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAddCustomer.Designer.cs">
+      <DependentUpon>ManageAddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageLogin.Designer.cs">
       <DependentUpon>ManageLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageManufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageManufacturer.Designer.cs">
+      <DependentUpon>ManageManufacturer.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageNewSales.cs">
       <SubType>Form</SubType>
@@ -77,6 +107,12 @@
     <Compile Include="ManageProduct.Designer.cs">
       <DependentUpon>ManageProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProductCategory.Designer.cs">
+      <DependentUpon>ManageProductCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageSalesQty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +124,12 @@
     </Compile>
     <Compile Include="ManageTenderAmount.Designer.cs">
       <DependentUpon>ManageTenderAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUnitOfMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUnitOfMeasure.Designer.cs">
+      <DependentUpon>ManageUnitOfMeasure.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageUser.cs">
       <SubType>Form</SubType>
@@ -116,14 +158,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmManufacturer.resx">
+      <DependentUpon>FrmManufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductCategory.resx">
+      <DependentUpon>FrmProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmProductList.resx">
       <DependentUpon>FrmProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitOfMeasure.resx">
+      <DependentUpon>FrmUnitOfMeasure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageAddCustomer.resx">
+      <DependentUpon>ManageAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageLogin.resx">
       <DependentUpon>ManageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageManufacturer.resx">
+      <DependentUpon>ManageManufacturer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageNewSales.resx">
       <DependentUpon>ManageNewSales.cs</DependentUpon>
@@ -131,20 +188,29 @@
     <EmbeddedResource Include="ManageProduct.resx">
       <DependentUpon>ManageProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageProductCategory.resx">
+      <DependentUpon>ManageProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageSalesQty.resx">
       <DependentUpon>ManageSalesQty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageTenderAmount.resx">
       <DependentUpon>ManageTenderAmount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageUnitOfMeasure.resx">
+      <DependentUpon>ManageUnitOfMeasure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageUser.resx">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\DataSources\PointOfSaleBL.ManufacturerDTO.datasource" />
+    <None Include="Properties\DataSources\PointOfSaleBL.ProductCategoryDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.ProductDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.SalesDetailsDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.SalesDTO.datasource" />
+    <None Include="Properties\DataSources\PointOfSaleBL.UnitOfMeasureDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.UserDTO.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

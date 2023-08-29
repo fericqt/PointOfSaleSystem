@@ -22,5 +22,20 @@ namespace PointOfSaleSystem.UserControlFolder
         {
             new FormLayer.ListForms().ListOfProducts(false, out string sout);
         }
+
+        private void productCatCustomButton_Click(object sender, EventArgs e)
+        {
+            new FormLayer.ListForms().ListOfProductCategory(false, out string sout);
+        }
+
+        private void uomCustomButton_Click(object sender, EventArgs e)
+        {
+            new FormLayer.ListForms().ListOfUnitOfMeasure(false, out string sout);
+        }
+
+        private void manufacturerCustomButton_Click(object sender, EventArgs e)
+        {
+            new FormLayer.ListForms().ListOfManufacturer(false, out string sout);
+        }
     }
 }

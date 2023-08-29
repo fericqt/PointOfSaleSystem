@@ -1,7 +1,7 @@
 ﻿
 namespace PointOfSaleForms
 {
-    partial class ManageTenderAmount
+    partial class ManageAddCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -37,8 +37,7 @@ namespace PointOfSaleForms
             // 
             // basePnl2
             // 
-            this.basePnl2.Location = new System.Drawing.Point(246, 1);
-            this.basePnl2.TabIndex = 0;
+            this.basePnl2.Location = new System.Drawing.Point(248, 1);
             // 
             // baseButtonUpdate
             // 
@@ -56,22 +55,21 @@ namespace PointOfSaleForms
             // 
             this.PanelMain3.Controls.Add(this.customTextBox1);
             this.PanelMain3.Controls.Add(this.customLabelDesc1);
-            this.PanelMain3.Size = new System.Drawing.Size(481, 119);
+            this.PanelMain3.Size = new System.Drawing.Size(483, 120);
             // 
             // baseButtonAddNew
             // 
             this.baseButtonAddNew.FlatAppearance.BorderSize = 0;
-            this.baseButtonAddNew.Text = "OK";
             // 
             // customLabelDesc1
             // 
             this.customLabelDesc1.AutoSize = true;
             this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc1.Location = new System.Drawing.Point(16, 19);
+            this.customLabelDesc1.Location = new System.Drawing.Point(16, 24);
             this.customLabelDesc1.Name = "customLabelDesc1";
-            this.customLabelDesc1.Size = new System.Drawing.Size(123, 25);
+            this.customLabelDesc1.Size = new System.Drawing.Size(130, 25);
             this.customLabelDesc1.TabIndex = 0;
-            this.customLabelDesc1.Text = "Tender Amount:";
+            this.customLabelDesc1.Text = "Customer Name:";
             // 
             // customTextBox1
             // 
@@ -90,21 +88,21 @@ namespace PointOfSaleForms
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(441, 31);
+            this.customTextBox1.Size = new System.Drawing.Size(443, 31);
             this.customTextBox1.TabIndex = 1;
             this.customTextBox1.TextProperty = null;
             this.customTextBox1.Texts = "";
             this.customTextBox1.UnderlinedStyle = false;
             // 
-            // ManageTenderAmount
+            // ManageAddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 277);
+            this.ClientSize = new System.Drawing.Size(497, 278);
             this.HideSaveNew = true;
-            this.Name = "ManageTenderAmount";
+            this.Name = "ManageAddCustomer";
             this.OnSaveName = "OK";
-            this.Text = "Enter Tender Amount:";
+            this.Text = "ManageAddCustomer";
             this.basePnl2.ResumeLayout(false);
             this.PanelMain3.ResumeLayout(false);
             this.PanelMain3.PerformLayout();

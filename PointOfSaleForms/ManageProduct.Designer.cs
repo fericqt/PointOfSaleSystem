@@ -42,18 +42,22 @@ namespace PointOfSaleForms
             this.customTextBox1 = new FerPROJ.CustomTextBox();
             this.productDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customTextBox2 = new FerPROJ.CustomTextBox();
-            this.customTextBox3 = new FerPROJ.CustomTextBox();
-            this.customTextBox4 = new FerPROJ.CustomTextBox();
-            this.customTextBox5 = new FerPROJ.CustomTextBox();
             this.customTextBox6 = new FerPROJ.CustomTextBox();
             this.customTextBox7 = new FerPROJ.CustomTextBox();
             this.customTextBox8 = new FerPROJ.CustomTextBox();
             this.customTextBox9 = new FerPROJ.CustomTextBox();
             this.customTextBox10 = new FerPROJ.CustomTextBox();
             this.customLabelDesc10 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.customLabelDesc11 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.prodCatCustomComboBox = new FerPROJ.CustomComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.uomCustomComboBox = new FerPROJ.CustomComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.manufacturerCustomComboBox = new FerPROJ.CustomComboBox();
             this.basePnl2.SuspendLayout();
             this.PanelMain3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDTOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // basePnl2
@@ -74,15 +78,17 @@ namespace PointOfSaleForms
             // 
             // PanelMain3
             // 
+            this.PanelMain3.Controls.Add(this.manufacturerCustomComboBox);
+            this.PanelMain3.Controls.Add(this.uomCustomComboBox);
+            this.PanelMain3.Controls.Add(this.dateTimePicker1);
+            this.PanelMain3.Controls.Add(this.prodCatCustomComboBox);
+            this.PanelMain3.Controls.Add(this.customLabelDesc11);
             this.PanelMain3.Controls.Add(this.customTextBox10);
             this.PanelMain3.Controls.Add(this.customLabelDesc10);
             this.PanelMain3.Controls.Add(this.customTextBox9);
             this.PanelMain3.Controls.Add(this.customTextBox8);
             this.PanelMain3.Controls.Add(this.customTextBox7);
             this.PanelMain3.Controls.Add(this.customTextBox6);
-            this.PanelMain3.Controls.Add(this.customTextBox5);
-            this.PanelMain3.Controls.Add(this.customTextBox4);
-            this.PanelMain3.Controls.Add(this.customTextBox3);
             this.PanelMain3.Controls.Add(this.customTextBox2);
             this.PanelMain3.Controls.Add(this.customTextBox1);
             this.PanelMain3.Controls.Add(this.customLabelDesc9);
@@ -94,7 +100,7 @@ namespace PointOfSaleForms
             this.PanelMain3.Controls.Add(this.customLabelDesc3);
             this.PanelMain3.Controls.Add(this.customLabelDesc2);
             this.PanelMain3.Controls.Add(this.customLabelDesc1);
-            this.PanelMain3.Size = new System.Drawing.Size(735, 366);
+            this.PanelMain3.Size = new System.Drawing.Size(735, 452);
             // 
             // baseButtonAddNew
             // 
@@ -114,7 +120,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc2.AutoSize = true;
             this.customLabelDesc2.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc2.Location = new System.Drawing.Point(35, 71);
+            this.customLabelDesc2.Location = new System.Drawing.Point(35, 137);
             this.customLabelDesc2.Name = "customLabelDesc2";
             this.customLabelDesc2.Size = new System.Drawing.Size(132, 25);
             this.customLabelDesc2.TabIndex = 1;
@@ -124,7 +130,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc3.AutoSize = true;
             this.customLabelDesc3.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc3.Location = new System.Drawing.Point(35, 135);
+            this.customLabelDesc3.Location = new System.Drawing.Point(420, 70);
             this.customLabelDesc3.Name = "customLabelDesc3";
             this.customLabelDesc3.Size = new System.Drawing.Size(123, 25);
             this.customLabelDesc3.TabIndex = 2;
@@ -134,7 +140,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc4.AutoSize = true;
             this.customLabelDesc4.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc4.Location = new System.Drawing.Point(35, 215);
+            this.customLabelDesc4.Location = new System.Drawing.Point(420, 212);
             this.customLabelDesc4.Name = "customLabelDesc4";
             this.customLabelDesc4.Size = new System.Drawing.Size(139, 25);
             this.customLabelDesc4.TabIndex = 3;
@@ -144,7 +150,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc5.AutoSize = true;
             this.customLabelDesc5.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc5.Location = new System.Drawing.Point(35, 290);
+            this.customLabelDesc5.Location = new System.Drawing.Point(420, 139);
             this.customLabelDesc5.Name = "customLabelDesc5";
             this.customLabelDesc5.Size = new System.Drawing.Size(168, 25);
             this.customLabelDesc5.TabIndex = 4;
@@ -154,7 +160,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc6.AutoSize = true;
             this.customLabelDesc6.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc6.Location = new System.Drawing.Point(416, 3);
+            this.customLabelDesc6.Location = new System.Drawing.Point(32, 73);
             this.customLabelDesc6.Name = "customLabelDesc6";
             this.customLabelDesc6.Size = new System.Drawing.Size(116, 25);
             this.customLabelDesc6.TabIndex = 5;
@@ -164,7 +170,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc7.AutoSize = true;
             this.customLabelDesc7.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc7.Location = new System.Drawing.Point(416, 71);
+            this.customLabelDesc7.Location = new System.Drawing.Point(32, 211);
             this.customLabelDesc7.Name = "customLabelDesc7";
             this.customLabelDesc7.Size = new System.Drawing.Size(85, 25);
             this.customLabelDesc7.TabIndex = 6;
@@ -174,7 +180,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc8.AutoSize = true;
             this.customLabelDesc8.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc8.Location = new System.Drawing.Point(416, 135);
+            this.customLabelDesc8.Location = new System.Drawing.Point(32, 282);
             this.customLabelDesc8.Name = "customLabelDesc8";
             this.customLabelDesc8.Size = new System.Drawing.Size(87, 25);
             this.customLabelDesc8.TabIndex = 7;
@@ -184,7 +190,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc9.AutoSize = true;
             this.customLabelDesc9.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc9.Location = new System.Drawing.Point(416, 215);
+            this.customLabelDesc9.Location = new System.Drawing.Point(32, 366);
             this.customLabelDesc9.Name = "customLabelDesc9";
             this.customLabelDesc9.Size = new System.Drawing.Size(113, 25);
             this.customLabelDesc9.TabIndex = 8;
@@ -195,7 +201,7 @@ namespace PointOfSaleForms
             this.customTextBox1.BackColor = System.Drawing.Color.White;
             this.customTextBox1.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox1.BorderRadius = 15;
+            this.customTextBox1.BorderRadius = 5;
             this.customTextBox1.BorderSize = 2;
             this.customTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductDescription", true));
             this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,12 +229,12 @@ namespace PointOfSaleForms
             this.customTextBox2.BackColor = System.Drawing.Color.White;
             this.customTextBox2.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox2.BorderRadius = 15;
+            this.customTextBox2.BorderRadius = 5;
             this.customTextBox2.BorderSize = 2;
             this.customTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductBarcode", true));
             this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox2.Location = new System.Drawing.Point(51, 100);
+            this.customTextBox2.Location = new System.Drawing.Point(51, 166);
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox2.Multiline = false;
             this.customTextBox2.Name = "customTextBox2";
@@ -242,89 +248,17 @@ namespace PointOfSaleForms
             this.customTextBox2.Texts = "";
             this.customTextBox2.UnderlinedStyle = false;
             // 
-            // customTextBox3
-            // 
-            this.customTextBox3.BackColor = System.Drawing.Color.White;
-            this.customTextBox3.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.customTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox3.BorderRadius = 15;
-            this.customTextBox3.BorderSize = 2;
-            this.customTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "UnitOfMeasure", true));
-            this.customTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox3.Location = new System.Drawing.Point(51, 164);
-            this.customTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox3.Multiline = false;
-            this.customTextBox3.Name = "customTextBox3";
-            this.customTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBox3.PasswordChar = false;
-            this.customTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox3.PlaceholderText = "";
-            this.customTextBox3.Size = new System.Drawing.Size(250, 31);
-            this.customTextBox3.TabIndex = 11;
-            this.customTextBox3.TextProperty = null;
-            this.customTextBox3.Texts = "";
-            this.customTextBox3.UnderlinedStyle = false;
-            // 
-            // customTextBox4
-            // 
-            this.customTextBox4.BackColor = System.Drawing.Color.White;
-            this.customTextBox4.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.customTextBox4.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox4.BorderRadius = 15;
-            this.customTextBox4.BorderSize = 2;
-            this.customTextBox4.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductExpiration", true));
-            this.customTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox4.Location = new System.Drawing.Point(51, 244);
-            this.customTextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox4.Multiline = false;
-            this.customTextBox4.Name = "customTextBox4";
-            this.customTextBox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBox4.PasswordChar = false;
-            this.customTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox4.PlaceholderText = "";
-            this.customTextBox4.Size = new System.Drawing.Size(250, 31);
-            this.customTextBox4.TabIndex = 12;
-            this.customTextBox4.TextProperty = null;
-            this.customTextBox4.Texts = "";
-            this.customTextBox4.UnderlinedStyle = false;
-            // 
-            // customTextBox5
-            // 
-            this.customTextBox5.BackColor = System.Drawing.Color.White;
-            this.customTextBox5.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.customTextBox5.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox5.BorderRadius = 15;
-            this.customTextBox5.BorderSize = 2;
-            this.customTextBox5.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductManufacturer", true));
-            this.customTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox5.Location = new System.Drawing.Point(51, 319);
-            this.customTextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox5.Multiline = false;
-            this.customTextBox5.Name = "customTextBox5";
-            this.customTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBox5.PasswordChar = false;
-            this.customTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox5.PlaceholderText = "";
-            this.customTextBox5.Size = new System.Drawing.Size(250, 31);
-            this.customTextBox5.TabIndex = 13;
-            this.customTextBox5.TextProperty = null;
-            this.customTextBox5.Texts = "";
-            this.customTextBox5.UnderlinedStyle = false;
-            // 
             // customTextBox6
             // 
             this.customTextBox6.BackColor = System.Drawing.Color.White;
             this.customTextBox6.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox6.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox6.BorderRadius = 15;
+            this.customTextBox6.BorderRadius = 5;
             this.customTextBox6.BorderSize = 2;
             this.customTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "SupplierName", true));
             this.customTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox6.Location = new System.Drawing.Point(435, 32);
+            this.customTextBox6.Location = new System.Drawing.Point(51, 102);
             this.customTextBox6.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox6.Multiline = false;
             this.customTextBox6.Name = "customTextBox6";
@@ -343,12 +277,12 @@ namespace PointOfSaleForms
             this.customTextBox7.BackColor = System.Drawing.Color.White;
             this.customTextBox7.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox7.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox7.BorderRadius = 15;
+            this.customTextBox7.BorderRadius = 5;
             this.customTextBox7.BorderSize = 2;
             this.customTextBox7.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "PriceCost", true));
             this.customTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox7.Location = new System.Drawing.Point(435, 100);
+            this.customTextBox7.Location = new System.Drawing.Point(51, 240);
             this.customTextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox7.Multiline = false;
             this.customTextBox7.Name = "customTextBox7";
@@ -367,12 +301,12 @@ namespace PointOfSaleForms
             this.customTextBox8.BackColor = System.Drawing.Color.White;
             this.customTextBox8.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox8.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox8.BorderRadius = 15;
+            this.customTextBox8.BorderRadius = 5;
             this.customTextBox8.BorderSize = 2;
             this.customTextBox8.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "PriceUsed", true));
             this.customTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox8.Location = new System.Drawing.Point(435, 164);
+            this.customTextBox8.Location = new System.Drawing.Point(51, 311);
             this.customTextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox8.Multiline = false;
             this.customTextBox8.Name = "customTextBox8";
@@ -391,12 +325,12 @@ namespace PointOfSaleForms
             this.customTextBox9.BackColor = System.Drawing.Color.White;
             this.customTextBox9.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox9.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox9.BorderRadius = 15;
+            this.customTextBox9.BorderRadius = 5;
             this.customTextBox9.BorderSize = 2;
             this.customTextBox9.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "PriceIncrease", true));
             this.customTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox9.Location = new System.Drawing.Point(435, 244);
+            this.customTextBox9.Location = new System.Drawing.Point(51, 395);
             this.customTextBox9.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox9.Multiline = false;
             this.customTextBox9.Name = "customTextBox9";
@@ -415,12 +349,12 @@ namespace PointOfSaleForms
             this.customTextBox10.BackColor = System.Drawing.Color.White;
             this.customTextBox10.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.customTextBox10.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox10.BorderRadius = 15;
+            this.customTextBox10.BorderRadius = 5;
             this.customTextBox10.BorderSize = 2;
             this.customTextBox10.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "RemainingQty", true));
             this.customTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox10.Location = new System.Drawing.Point(435, 319);
+            this.customTextBox10.Location = new System.Drawing.Point(436, 311);
             this.customTextBox10.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox10.Multiline = false;
             this.customTextBox10.Name = "customTextBox10";
@@ -438,23 +372,123 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc10.AutoSize = true;
             this.customLabelDesc10.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc10.Location = new System.Drawing.Point(416, 290);
+            this.customLabelDesc10.Location = new System.Drawing.Point(417, 282);
             this.customLabelDesc10.Name = "customLabelDesc10";
             this.customLabelDesc10.Size = new System.Drawing.Size(117, 25);
             this.customLabelDesc10.TabIndex = 18;
             this.customLabelDesc10.Text = "Remaining Qty:";
             // 
+            // customLabelDesc11
+            // 
+            this.customLabelDesc11.AutoSize = true;
+            this.customLabelDesc11.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc11.Location = new System.Drawing.Point(420, 5);
+            this.customLabelDesc11.Name = "customLabelDesc11";
+            this.customLabelDesc11.Size = new System.Drawing.Size(138, 25);
+            this.customLabelDesc11.TabIndex = 20;
+            this.customLabelDesc11.Text = "Product Category:";
+            // 
+            // prodCatCustomComboBox
+            // 
+            this.prodCatCustomComboBox.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.prodCatCustomComboBox.BorderColor = System.Drawing.Color.White;
+            this.prodCatCustomComboBox.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.prodCatCustomComboBox.BorderRadius = 5;
+            this.prodCatCustomComboBox.BorderSize = 1;
+            this.prodCatCustomComboBox.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductCategory", true));
+            this.prodCatCustomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.prodCatCustomComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.prodCatCustomComboBox.ForeColor = System.Drawing.Color.White;
+            this.prodCatCustomComboBox.IconColor = System.Drawing.Color.White;
+            this.prodCatCustomComboBox.ListBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.prodCatCustomComboBox.ListTextColor = System.Drawing.Color.White;
+            this.prodCatCustomComboBox.Location = new System.Drawing.Point(436, 33);
+            this.prodCatCustomComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.prodCatCustomComboBox.Name = "prodCatCustomComboBox";
+            this.prodCatCustomComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.prodCatCustomComboBox.SelectedValue = null;
+            this.prodCatCustomComboBox.Size = new System.Drawing.Size(250, 30);
+            this.prodCatCustomComboBox.TabIndex = 21;
+            this.prodCatCustomComboBox.TextProperty = "";
+            this.prodCatCustomComboBox.Texts = "";
+            this.prodCatCustomComboBox.UnderlinedStyle = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.productDTOBindingSource, "ProductExpiration", true));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(436, 240);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
+            this.dateTimePicker1.TabIndex = 22;
+            // 
+            // uomCustomComboBox
+            // 
+            this.uomCustomComboBox.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.uomCustomComboBox.BorderColor = System.Drawing.Color.White;
+            this.uomCustomComboBox.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.uomCustomComboBox.BorderRadius = 5;
+            this.uomCustomComboBox.BorderSize = 1;
+            this.uomCustomComboBox.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "UnitOfMeasure", true));
+            this.uomCustomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.uomCustomComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.uomCustomComboBox.ForeColor = System.Drawing.Color.White;
+            this.uomCustomComboBox.IconColor = System.Drawing.Color.White;
+            this.uomCustomComboBox.ListBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.uomCustomComboBox.ListTextColor = System.Drawing.Color.White;
+            this.uomCustomComboBox.Location = new System.Drawing.Point(436, 102);
+            this.uomCustomComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.uomCustomComboBox.Name = "uomCustomComboBox";
+            this.uomCustomComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.uomCustomComboBox.SelectedValue = null;
+            this.uomCustomComboBox.Size = new System.Drawing.Size(250, 30);
+            this.uomCustomComboBox.TabIndex = 23;
+            this.uomCustomComboBox.TextProperty = "";
+            this.uomCustomComboBox.Texts = "";
+            this.uomCustomComboBox.UnderlinedStyle = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.DataSource = this.productDTOBindingSource;
+            // 
+            // manufacturerCustomComboBox
+            // 
+            this.manufacturerCustomComboBox.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.manufacturerCustomComboBox.BorderColor = System.Drawing.Color.White;
+            this.manufacturerCustomComboBox.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.manufacturerCustomComboBox.BorderRadius = 5;
+            this.manufacturerCustomComboBox.BorderSize = 1;
+            this.manufacturerCustomComboBox.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productDTOBindingSource, "ProductManufacturer", true));
+            this.manufacturerCustomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.manufacturerCustomComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.manufacturerCustomComboBox.ForeColor = System.Drawing.Color.White;
+            this.manufacturerCustomComboBox.IconColor = System.Drawing.Color.White;
+            this.manufacturerCustomComboBox.ListBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.manufacturerCustomComboBox.ListTextColor = System.Drawing.Color.White;
+            this.manufacturerCustomComboBox.Location = new System.Drawing.Point(436, 167);
+            this.manufacturerCustomComboBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.manufacturerCustomComboBox.Name = "manufacturerCustomComboBox";
+            this.manufacturerCustomComboBox.Padding = new System.Windows.Forms.Padding(1);
+            this.manufacturerCustomComboBox.SelectedValue = null;
+            this.manufacturerCustomComboBox.Size = new System.Drawing.Size(250, 30);
+            this.manufacturerCustomComboBox.TabIndex = 24;
+            this.manufacturerCustomComboBox.TextProperty = "";
+            this.manufacturerCustomComboBox.Texts = "";
+            this.manufacturerCustomComboBox.UnderlinedStyle = false;
+            // 
             // ManageProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 524);
+            this.ClientSize = new System.Drawing.Size(749, 610);
             this.Name = "ManageProduct";
             this.Text = "ManageProduct";
             this.basePnl2.ResumeLayout(false);
             this.PanelMain3.ResumeLayout(false);
             this.PanelMain3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDTOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -465,9 +499,6 @@ namespace PointOfSaleForms
         private FerPROJ.CustomTextBox customTextBox8;
         private FerPROJ.CustomTextBox customTextBox7;
         private FerPROJ.CustomTextBox customTextBox6;
-        private FerPROJ.CustomTextBox customTextBox5;
-        private FerPROJ.CustomTextBox customTextBox4;
-        private FerPROJ.CustomTextBox customTextBox3;
         private FerPROJ.CustomTextBox customTextBox2;
         private FerPROJ.CustomTextBox customTextBox1;
         private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc9;
@@ -482,5 +513,11 @@ namespace PointOfSaleForms
         private FerPROJ.CustomTextBox customTextBox10;
         private System.Windows.Forms.BindingSource productDTOBindingSource;
         private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc10;
+        private FerPROJ.CustomComboBox prodCatCustomComboBox;
+        private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private FerPROJ.CustomComboBox uomCustomComboBox;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private FerPROJ.CustomComboBox manufacturerCustomComboBox;
     }
 }

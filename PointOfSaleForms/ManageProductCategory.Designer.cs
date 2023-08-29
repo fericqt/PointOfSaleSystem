@@ -1,7 +1,7 @@
 ﻿
 namespace PointOfSaleForms
 {
-    partial class ManageTenderAmount
+    partial class ManageProductCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,20 @@ namespace PointOfSaleForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.customLabelDesc1 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customTextBox1 = new FerPROJ.CustomTextBox();
+            this.productCategoryDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.basePnl2.SuspendLayout();
             this.PanelMain3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productCategoryDTOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // basePnl2
             // 
-            this.basePnl2.Location = new System.Drawing.Point(246, 1);
-            this.basePnl2.TabIndex = 0;
+            this.basePnl2.Location = new System.Drawing.Point(249, 1);
             // 
             // baseButtonUpdate
             // 
@@ -56,22 +60,21 @@ namespace PointOfSaleForms
             // 
             this.PanelMain3.Controls.Add(this.customTextBox1);
             this.PanelMain3.Controls.Add(this.customLabelDesc1);
-            this.PanelMain3.Size = new System.Drawing.Size(481, 119);
+            this.PanelMain3.Size = new System.Drawing.Size(484, 102);
             // 
             // baseButtonAddNew
             // 
             this.baseButtonAddNew.FlatAppearance.BorderSize = 0;
-            this.baseButtonAddNew.Text = "OK";
             // 
             // customLabelDesc1
             // 
             this.customLabelDesc1.AutoSize = true;
             this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc1.Location = new System.Drawing.Point(16, 19);
+            this.customLabelDesc1.Location = new System.Drawing.Point(29, 18);
             this.customLabelDesc1.Name = "customLabelDesc1";
-            this.customLabelDesc1.Size = new System.Drawing.Size(123, 25);
+            this.customLabelDesc1.Size = new System.Drawing.Size(126, 25);
             this.customLabelDesc1.TabIndex = 0;
-            this.customLabelDesc1.Text = "Tender Amount:";
+            this.customLabelDesc1.Text = "Category Name:";
             // 
             // customTextBox1
             // 
@@ -80,9 +83,10 @@ namespace PointOfSaleForms
             this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
             this.customTextBox1.BorderRadius = 15;
             this.customTextBox1.BorderSize = 2;
+            this.customTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.productCategoryDTOBindingSource, "CategoryName", true));
             this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox1.Location = new System.Drawing.Point(21, 60);
+            this.customTextBox1.Location = new System.Drawing.Point(34, 47);
             this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox1.Multiline = false;
             this.customTextBox1.Name = "customTextBox1";
@@ -90,24 +94,33 @@ namespace PointOfSaleForms
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(441, 31);
+            this.customTextBox1.Size = new System.Drawing.Size(431, 31);
             this.customTextBox1.TabIndex = 1;
             this.customTextBox1.TextProperty = null;
             this.customTextBox1.Texts = "";
             this.customTextBox1.UnderlinedStyle = false;
             // 
-            // ManageTenderAmount
+            // productCategoryDTOBindingSource
+            // 
+            this.productCategoryDTOBindingSource.DataSource = typeof(PointOfSaleBL.ProductCategoryDTO);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.DataSource = this.productCategoryDTOBindingSource;
+            // 
+            // ManageProductCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 277);
-            this.HideSaveNew = true;
-            this.Name = "ManageTenderAmount";
-            this.OnSaveName = "OK";
-            this.Text = "Enter Tender Amount:";
+            this.ClientSize = new System.Drawing.Size(498, 260);
+            this.Name = "ManageProductCategory";
+            this.Text = "ManageProductCategory";
             this.basePnl2.ResumeLayout(false);
             this.PanelMain3.ResumeLayout(false);
             this.PanelMain3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productCategoryDTOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,5 +129,7 @@ namespace PointOfSaleForms
 
         private FerPROJ.CustomTextBox customTextBox1;
         private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc1;
+        private System.Windows.Forms.BindingSource productCategoryDTOBindingSource;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

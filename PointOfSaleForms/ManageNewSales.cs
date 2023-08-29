@@ -44,6 +44,7 @@ namespace PointOfSaleForms
             keyboardShortcuts[Keys.F2] = RemoveItem;
             keyboardShortcuts[Keys.F3] = TenderAmount;
             keyboardShortcuts[Keys.F4] = PostTransaction;
+            keyboardShortcuts[Keys.F5] = AddCustomerName;
         }
         private void NewTransaction()
         {
@@ -91,6 +92,23 @@ namespace PointOfSaleForms
                 ClearTransaction();
             }
             return;
+        }
+        private void AddCustomerName()
+        {
+            using (var frm = new ManageAddCustomer())
+            {
+                frm.ShowDialog();
+                if (frm.CurrentFormResult)
+                {
+                    MyDTO.CustomerName = frm.customerName;
+                }
+            }
+            SetReset();
+        }
+
+        private void customLabelDesc9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

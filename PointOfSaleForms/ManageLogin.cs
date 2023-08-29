@@ -24,7 +24,7 @@ namespace PointOfSaleForms
         }
         protected override void LoadComponents()
         {
-            customTextBox1.Focus();
+            customTextBox1.Focus(); 
             switch (CurrentFormMode)
             {
                 case FormMode.Add:

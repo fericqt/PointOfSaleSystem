@@ -46,6 +46,15 @@ namespace PointOfSaleForms
             this.customLabelDesc7 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customPanel1 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.salesDetailsDTOCustomDataGridView = new FerPROJ.FerCONTROLS.CustomDataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesDetailsDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customPanel2 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.customLabelDesc10 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
@@ -67,15 +76,8 @@ namespace PointOfSaleForms
             this.label1 = new System.Windows.Forms.Label();
             this.customLabelDesc3 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc2 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customButton5 = new FerPROJ.CustomButton();
+            this.customLabelDesc11 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.basePnl2.SuspendLayout();
             this.PanelMain3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -123,12 +125,16 @@ namespace PointOfSaleForms
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 678F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.customLabelDesc7, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.customLabelDesc11, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.customButton5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.customButton4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.customButton3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.customButton2, 1, 1);
@@ -136,7 +142,6 @@ namespace PointOfSaleForms
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc6, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.customLabelDesc7, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -158,7 +163,7 @@ namespace PointOfSaleForms
             this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton4.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton4.ForeColor = System.Drawing.Color.Black;
-            this.customButton4.Location = new System.Drawing.Point(3, 32);
+            this.customButton4.Location = new System.Drawing.Point(283, 32);
             this.customButton4.Name = "customButton4";
             this.customButton4.Size = new System.Drawing.Size(134, 93);
             this.customButton4.TabIndex = 6;
@@ -179,11 +184,11 @@ namespace PointOfSaleForms
             this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton3.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton3.ForeColor = System.Drawing.Color.Black;
-            this.customButton3.Location = new System.Drawing.Point(423, 32);
+            this.customButton3.Location = new System.Drawing.Point(563, 32);
             this.customButton3.Name = "customButton3";
             this.customButton3.Size = new System.Drawing.Size(134, 93);
             this.customButton3.TabIndex = 2;
-            this.customButton3.Text = "F4";
+            this.customButton3.Text = "F5";
             this.customButton3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.customButton3.TextColor = System.Drawing.Color.Black;
             this.customButton3.UseVisualStyleBackColor = false;
@@ -200,7 +205,7 @@ namespace PointOfSaleForms
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton2.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.Black;
-            this.customButton2.Location = new System.Drawing.Point(283, 32);
+            this.customButton2.Location = new System.Drawing.Point(423, 32);
             this.customButton2.Name = "customButton2";
             this.customButton2.Size = new System.Drawing.Size(134, 93);
             this.customButton2.TabIndex = 1;
@@ -359,6 +364,79 @@ namespace PointOfSaleForms
             this.salesDetailsDTOCustomDataGridView.Size = new System.Drawing.Size(850, 605);
             this.salesDetailsDTOCustomDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdTrack";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdTrack";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "DateReference";
+            this.dataGridViewTextBoxColumn2.HeaderText = "DateReference";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            this.dataGridViewTextBoxColumn2.Width = 260;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TransNo";
+            this.dataGridViewTextBoxColumn3.HeaderText = "TransNo";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductCode";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ProductCode";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDescription";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ProductDescription";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 390;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Qty";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 169;
+            // 
+            // Discount
+            // 
+            this.Discount.DataPropertyName = "Discount";
+            this.Discount.HeaderText = "Discount";
+            this.Discount.Name = "Discount";
+            this.Discount.ReadOnly = true;
+            this.Discount.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalAmount";
+            this.dataGridViewTextBoxColumn8.HeaderText = "TotalAmount";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 170;
+            // 
             // salesDetailsDTOBindingSource
             // 
             this.salesDetailsDTOBindingSource.DataSource = typeof(PointOfSaleBL.SalesDetailsDTO);
@@ -403,11 +481,11 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc10.AutoSize = true;
             this.customLabelDesc10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "ProcessedBy", true));
-            this.customLabelDesc10.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc10.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc10.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc10.Location = new System.Drawing.Point(172, 109);
+            this.customLabelDesc10.Location = new System.Drawing.Point(149, 177);
             this.customLabelDesc10.Name = "customLabelDesc10";
-            this.customLabelDesc10.Size = new System.Drawing.Size(95, 25);
+            this.customLabelDesc10.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc10.TabIndex = 18;
             this.customLabelDesc10.Text = "Date Today:";
             // 
@@ -419,34 +497,35 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc9.AutoSize = true;
             this.customLabelDesc9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "CustomerName", true));
-            this.customLabelDesc9.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc9.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc9.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc9.Location = new System.Drawing.Point(172, 73);
+            this.customLabelDesc9.Location = new System.Drawing.Point(149, 110);
             this.customLabelDesc9.Name = "customLabelDesc9";
-            this.customLabelDesc9.Size = new System.Drawing.Size(95, 25);
+            this.customLabelDesc9.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc9.TabIndex = 17;
             this.customLabelDesc9.Text = "Date Today:";
+            this.customLabelDesc9.Click += new System.EventHandler(this.customLabelDesc9_Click);
             // 
             // customLabelDesc8
             // 
             this.customLabelDesc8.AutoSize = true;
             this.customLabelDesc8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "DateReference", true));
-            this.customLabelDesc8.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc8.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc8.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc8.Location = new System.Drawing.Point(172, 34);
+            this.customLabelDesc8.Location = new System.Drawing.Point(149, 42);
             this.customLabelDesc8.Name = "customLabelDesc8";
-            this.customLabelDesc8.Size = new System.Drawing.Size(95, 25);
+            this.customLabelDesc8.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc8.TabIndex = 16;
             this.customLabelDesc8.Text = "Date Today:";
             // 
             // customLabelDesc1
             // 
             this.customLabelDesc1.AutoSize = true;
-            this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc1.ForeColor = System.Drawing.Color.White;
-            this.customLabelDesc1.Location = new System.Drawing.Point(24, 34);
+            this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabelDesc1.ForeColor = System.Drawing.Color.Black;
+            this.customLabelDesc1.Location = new System.Drawing.Point(23, 13);
             this.customLabelDesc1.Name = "customLabelDesc1";
-            this.customLabelDesc1.Size = new System.Drawing.Size(95, 25);
+            this.customLabelDesc1.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc1.TabIndex = 15;
             this.customLabelDesc1.Text = "Date Today:";
             // 
@@ -455,7 +534,7 @@ namespace PointOfSaleForms
             this.customLabelTitle10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "SubTotal", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle10.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle10.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle10.Location = new System.Drawing.Point(94, 211);
+            this.customLabelTitle10.Location = new System.Drawing.Point(74, 254);
             this.customLabelTitle10.Name = "customLabelTitle10";
             this.customLabelTitle10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.customLabelTitle10.Size = new System.Drawing.Size(213, 36);
@@ -467,7 +546,7 @@ namespace PointOfSaleForms
             this.customLabelTitle9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "TotalDiscount", true));
             this.customLabelTitle9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle9.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle9.Location = new System.Drawing.Point(94, 292);
+            this.customLabelTitle9.Location = new System.Drawing.Point(74, 326);
             this.customLabelTitle9.Name = "customLabelTitle9";
             this.customLabelTitle9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.customLabelTitle9.Size = new System.Drawing.Size(213, 36);
@@ -479,7 +558,7 @@ namespace PointOfSaleForms
             this.customLabelTitle8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "GrossTotal", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle8.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle8.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle8.Location = new System.Drawing.Point(94, 374);
+            this.customLabelTitle8.Location = new System.Drawing.Point(74, 388);
             this.customLabelTitle8.Name = "customLabelTitle8";
             this.customLabelTitle8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.customLabelTitle8.Size = new System.Drawing.Size(213, 36);
@@ -512,7 +591,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle5.AutoSize = true;
             this.customLabelTitle5.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle5.ForeColor = System.Drawing.Color.White;
+            this.customLabelTitle5.ForeColor = System.Drawing.Color.Black;
             this.customLabelTitle5.Location = new System.Drawing.Point(23, 518);
             this.customLabelTitle5.Name = "customLabelTitle5";
             this.customLabelTitle5.Size = new System.Drawing.Size(204, 36);
@@ -523,7 +602,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle6.AutoSize = true;
             this.customLabelTitle6.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle6.ForeColor = System.Drawing.Color.White;
+            this.customLabelTitle6.ForeColor = System.Drawing.Color.Black;
             this.customLabelTitle6.Location = new System.Drawing.Point(23, 439);
             this.customLabelTitle6.Name = "customLabelTitle6";
             this.customLabelTitle6.Size = new System.Drawing.Size(206, 36);
@@ -543,8 +622,8 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle3.AutoSize = true;
             this.customLabelTitle3.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle3.ForeColor = System.Drawing.Color.White;
-            this.customLabelTitle3.Location = new System.Drawing.Point(248, 338);
+            this.customLabelTitle3.ForeColor = System.Drawing.Color.Black;
+            this.customLabelTitle3.Location = new System.Drawing.Point(250, 362);
             this.customLabelTitle3.Name = "customLabelTitle3";
             this.customLabelTitle3.Size = new System.Drawing.Size(127, 36);
             this.customLabelTitle3.TabIndex = 6;
@@ -554,8 +633,8 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle2.AutoSize = true;
             this.customLabelTitle2.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle2.ForeColor = System.Drawing.Color.White;
-            this.customLabelTitle2.Location = new System.Drawing.Point(269, 256);
+            this.customLabelTitle2.ForeColor = System.Drawing.Color.Black;
+            this.customLabelTitle2.Location = new System.Drawing.Point(270, 290);
             this.customLabelTitle2.Name = "customLabelTitle2";
             this.customLabelTitle2.Size = new System.Drawing.Size(106, 36);
             this.customLabelTitle2.TabIndex = 5;
@@ -565,8 +644,8 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle1.AutoSize = true;
             this.customLabelTitle1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle1.ForeColor = System.Drawing.Color.White;
-            this.customLabelTitle1.Location = new System.Drawing.Point(268, 176);
+            this.customLabelTitle1.ForeColor = System.Drawing.Color.Black;
+            this.customLabelTitle1.Location = new System.Drawing.Point(269, 218);
             this.customLabelTitle1.Name = "customLabelTitle1";
             this.customLabelTitle1.Size = new System.Drawing.Size(107, 36);
             this.customLabelTitle1.TabIndex = 4;
@@ -575,7 +654,7 @@ namespace PointOfSaleForms
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label1.Location = new System.Drawing.Point(-4, 163);
+            this.label1.Location = new System.Drawing.Point(-4, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 3);
             this.label1.TabIndex = 3;
@@ -584,96 +663,57 @@ namespace PointOfSaleForms
             // customLabelDesc3
             // 
             this.customLabelDesc3.AutoSize = true;
-            this.customLabelDesc3.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc3.ForeColor = System.Drawing.Color.White;
-            this.customLabelDesc3.Location = new System.Drawing.Point(24, 109);
+            this.customLabelDesc3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabelDesc3.ForeColor = System.Drawing.Color.Black;
+            this.customLabelDesc3.Location = new System.Drawing.Point(23, 143);
             this.customLabelDesc3.Name = "customLabelDesc3";
-            this.customLabelDesc3.Size = new System.Drawing.Size(108, 25);
+            this.customLabelDesc3.Size = new System.Drawing.Size(151, 34);
             this.customLabelDesc3.TabIndex = 2;
             this.customLabelDesc3.Text = "Processed By:";
             // 
             // customLabelDesc2
             // 
             this.customLabelDesc2.AutoSize = true;
-            this.customLabelDesc2.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc2.ForeColor = System.Drawing.Color.White;
-            this.customLabelDesc2.Location = new System.Drawing.Point(24, 73);
+            this.customLabelDesc2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabelDesc2.ForeColor = System.Drawing.Color.Black;
+            this.customLabelDesc2.Location = new System.Drawing.Point(23, 76);
             this.customLabelDesc2.Name = "customLabelDesc2";
-            this.customLabelDesc2.Size = new System.Drawing.Size(126, 25);
+            this.customLabelDesc2.Size = new System.Drawing.Size(177, 34);
             this.customLabelDesc2.TabIndex = 1;
             this.customLabelDesc2.Text = "CustomerName:";
             // 
-            // dataGridViewTextBoxColumn1
+            // customButton5
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdTrack";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdTrack";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.customButton5.BackColor = System.Drawing.Color.Silver;
+            this.customButton5.BackgroundColor = System.Drawing.Color.Silver;
+            this.customButton5.BorderColor = System.Drawing.Color.Green;
+            this.customButton5.BorderRadius = 20;
+            this.customButton5.BorderSize = 0;
+            this.customButton5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customButton5.FlatAppearance.BorderSize = 0;
+            this.customButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton5.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton5.ForeColor = System.Drawing.Color.Black;
+            this.customButton5.Location = new System.Drawing.Point(3, 32);
+            this.customButton5.Name = "customButton5";
+            this.customButton5.Size = new System.Drawing.Size(134, 93);
+            this.customButton5.TabIndex = 8;
+            this.customButton5.Text = "F4";
+            this.customButton5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.customButton5.TextColor = System.Drawing.Color.Black;
+            this.customButton5.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewTextBoxColumn2
+            // customLabelDesc11
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "DateReference";
-            this.dataGridViewTextBoxColumn2.HeaderText = "DateReference";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 260;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TransNo";
-            this.dataGridViewTextBoxColumn3.HeaderText = "TransNo";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductCode";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ProductCode";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDescription";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ProductDescription";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 350;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Qty";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Qty";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 170;
-            // 
-            // Discount
-            // 
-            this.Discount.DataPropertyName = "Discount";
-            this.Discount.HeaderText = "Discount";
-            this.Discount.Name = "Discount";
-            this.Discount.ReadOnly = true;
-            this.Discount.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalAmount";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TotalAmount";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 171;
+            this.customLabelDesc11.AutoSize = true;
+            this.customLabelDesc11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customLabelDesc11.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc11.Location = new System.Drawing.Point(563, 0);
+            this.customLabelDesc11.Name = "customLabelDesc11";
+            this.customLabelDesc11.Size = new System.Drawing.Size(134, 29);
+            this.customLabelDesc11.TabIndex = 8;
+            this.customLabelDesc11.Text = "Customer Name";
+            this.customLabelDesc11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ManageNewSales
             // 
@@ -745,5 +785,7 @@ namespace PointOfSaleForms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc11;
+        private FerPROJ.CustomButton customButton5;
     }
 }
