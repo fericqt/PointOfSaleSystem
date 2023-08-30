@@ -23,10 +23,11 @@ namespace PointOfSaleForms
         }
         protected override void LoadComponents()
         {
-            customTextBox1.Focus();
+            
             switch (CurrentFormMode)
             {
                 case FormMode.Add:
+                    customTextBox1.Focus();
                     var tblp = new ProductDB().GetById(Manage_IdTrack);
                     MyDTO.RemainingQty = tblp.RemainingQty;
                     MyDTO.ProductCode = tblp.ProductCode;

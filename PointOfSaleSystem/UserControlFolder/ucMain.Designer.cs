@@ -42,6 +42,7 @@ namespace PointOfSaleSystem.UserControlFolder
             this.productCatCustomButton = new FerPROJ.CustomButton();
             this.productListCustomButton = new FerPROJ.CustomButton();
             this.customLabelTitle1 = new FerPROJ.FerCONTROLS.CustomLabelTitle();
+            this.productBarcodeCustomButton = new FerPROJ.CustomButton();
             this.customPanel1.SuspendLayout();
             this.customGroupBox2.SuspendLayout();
             this.customGroupBox1.SuspendLayout();
@@ -180,6 +181,7 @@ namespace PointOfSaleSystem.UserControlFolder
             // customGroupBox1
             // 
             this.customGroupBox1.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.customGroupBox1.Controls.Add(this.productBarcodeCustomButton);
             this.customGroupBox1.Controls.Add(this.manufacturerCustomButton);
             this.customGroupBox1.Controls.Add(this.uomCustomButton);
             this.customGroupBox1.Controls.Add(this.productCatCustomButton);
@@ -188,7 +190,7 @@ namespace PointOfSaleSystem.UserControlFolder
             this.customGroupBox1.Location = new System.Drawing.Point(53, 80);
             this.customGroupBox1.Name = "customGroupBox1";
             this.customGroupBox1.Padding = new System.Windows.Forms.Padding(6, 40, 6, 6);
-            this.customGroupBox1.Size = new System.Drawing.Size(411, 188);
+            this.customGroupBox1.Size = new System.Drawing.Size(411, 274);
             this.customGroupBox1.TabIndex = 1;
             this.customGroupBox1.TabStop = false;
             this.customGroupBox1.Text = "PRODUCTS AREA";
@@ -284,6 +286,26 @@ namespace PointOfSaleSystem.UserControlFolder
             this.customLabelTitle1.TabIndex = 0;
             this.customLabelTitle1.Text = "Administrative Functions";
             // 
+            // productBarcodeCustomButton
+            // 
+            this.productBarcodeCustomButton.BackColor = System.Drawing.Color.Silver;
+            this.productBarcodeCustomButton.BackgroundColor = System.Drawing.Color.Silver;
+            this.productBarcodeCustomButton.BorderColor = System.Drawing.Color.Green;
+            this.productBarcodeCustomButton.BorderRadius = 20;
+            this.productBarcodeCustomButton.BorderSize = 0;
+            this.productBarcodeCustomButton.FlatAppearance.BorderSize = 0;
+            this.productBarcodeCustomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productBarcodeCustomButton.Font = new System.Drawing.Font("Poppins", 9F);
+            this.productBarcodeCustomButton.ForeColor = System.Drawing.Color.Black;
+            this.productBarcodeCustomButton.Location = new System.Drawing.Point(18, 195);
+            this.productBarcodeCustomButton.Name = "productBarcodeCustomButton";
+            this.productBarcodeCustomButton.Size = new System.Drawing.Size(150, 40);
+            this.productBarcodeCustomButton.TabIndex = 4;
+            this.productBarcodeCustomButton.Text = "Product Barcode";
+            this.productBarcodeCustomButton.TextColor = System.Drawing.Color.Black;
+            this.productBarcodeCustomButton.UseVisualStyleBackColor = false;
+            this.productBarcodeCustomButton.Click += new System.EventHandler(this.productBarcodeCustomButton_Click);
+            // 
             // ucMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +337,6 @@ namespace PointOfSaleSystem.UserControlFolder
         private FerPROJ.CustomButton customButton8;
         private FerPROJ.CustomButton customButton6;
         private FerPROJ.CustomButton customButton7;
+        private FerPROJ.CustomButton productBarcodeCustomButton;
     }
 }

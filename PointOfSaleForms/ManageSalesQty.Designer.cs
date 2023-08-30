@@ -83,7 +83,7 @@ namespace PointOfSaleForms
             this.PanelMain3.Controls.Add(this.customLabelTitle3);
             this.PanelMain3.Controls.Add(this.customLabelTitle2);
             this.PanelMain3.Controls.Add(this.customLabelTitle1);
-            this.PanelMain3.Size = new System.Drawing.Size(633, 434);
+            this.PanelMain3.Size = new System.Drawing.Size(633, 344);
             // 
             // baseButtonAddNew
             // 
@@ -93,7 +93,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle1.AutoSize = true;
             this.customLabelTitle1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle1.Location = new System.Drawing.Point(32, 26);
+            this.customLabelTitle1.Location = new System.Drawing.Point(15, 26);
             this.customLabelTitle1.Name = "customLabelTitle1";
             this.customLabelTitle1.Size = new System.Drawing.Size(221, 36);
             this.customLabelTitle1.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelTitle2.AutoSize = true;
             this.customLabelTitle2.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
-            this.customLabelTitle2.Location = new System.Drawing.Point(32, 116);
+            this.customLabelTitle2.Location = new System.Drawing.Point(15, 71);
             this.customLabelTitle2.Name = "customLabelTitle2";
             this.customLabelTitle2.Size = new System.Drawing.Size(170, 36);
             this.customLabelTitle2.TabIndex = 1;
@@ -115,7 +115,7 @@ namespace PointOfSaleForms
             this.customLabelTitle3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDetailsDTOBindingSource, "RemainingQty", true));
             this.customLabelTitle3.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle3.ForeColor = System.Drawing.Color.Maroon;
-            this.customLabelTitle3.Location = new System.Drawing.Point(247, 149);
+            this.customLabelTitle3.Location = new System.Drawing.Point(260, 71);
             this.customLabelTitle3.Name = "customLabelTitle3";
             this.customLabelTitle3.Size = new System.Drawing.Size(221, 36);
             this.customLabelTitle3.TabIndex = 2;
@@ -131,7 +131,7 @@ namespace PointOfSaleForms
             this.customLabelTitle4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDetailsDTOBindingSource, "ProductDescription", true));
             this.customLabelTitle4.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle4.ForeColor = System.Drawing.Color.Maroon;
-            this.customLabelTitle4.Location = new System.Drawing.Point(247, 62);
+            this.customLabelTitle4.Location = new System.Drawing.Point(260, 26);
             this.customLabelTitle4.Name = "customLabelTitle4";
             this.customLabelTitle4.Size = new System.Drawing.Size(221, 36);
             this.customLabelTitle4.TabIndex = 3;
@@ -140,7 +140,7 @@ namespace PointOfSaleForms
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 211);
+            this.label1.Location = new System.Drawing.Point(3, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(627, 3);
             this.label1.TabIndex = 4;
@@ -150,7 +150,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc1.AutoSize = true;
             this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc1.Location = new System.Drawing.Point(261, 242);
+            this.customLabelDesc1.Location = new System.Drawing.Point(261, 152);
             this.customLabelDesc1.Name = "customLabelDesc1";
             this.customLabelDesc1.Size = new System.Drawing.Size(39, 25);
             this.customLabelDesc1.TabIndex = 5;
@@ -166,7 +166,7 @@ namespace PointOfSaleForms
             this.customTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.salesDetailsDTOBindingSource, "Qty", true));
             this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox1.Location = new System.Drawing.Point(380, 242);
+            this.customTextBox1.Location = new System.Drawing.Point(380, 152);
             this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox1.Multiline = false;
             this.customTextBox1.Name = "customTextBox1";
@@ -184,7 +184,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc2.AutoSize = true;
             this.customLabelDesc2.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc2.Location = new System.Drawing.Point(261, 281);
+            this.customLabelDesc2.Location = new System.Drawing.Point(261, 191);
             this.customLabelDesc2.Name = "customLabelDesc2";
             this.customLabelDesc2.Size = new System.Drawing.Size(49, 25);
             this.customLabelDesc2.TabIndex = 7;
@@ -194,7 +194,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc3.AutoSize = true;
             this.customLabelDesc3.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc3.Location = new System.Drawing.Point(261, 320);
+            this.customLabelDesc3.Location = new System.Drawing.Point(261, 230);
             this.customLabelDesc3.Name = "customLabelDesc3";
             this.customLabelDesc3.Size = new System.Drawing.Size(73, 25);
             this.customLabelDesc3.TabIndex = 8;
@@ -204,7 +204,7 @@ namespace PointOfSaleForms
             // 
             this.customLabelDesc4.AutoSize = true;
             this.customLabelDesc4.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc4.Location = new System.Drawing.Point(261, 381);
+            this.customLabelDesc4.Location = new System.Drawing.Point(261, 291);
             this.customLabelDesc4.Name = "customLabelDesc4";
             this.customLabelDesc4.Size = new System.Drawing.Size(108, 25);
             this.customLabelDesc4.TabIndex = 9;
@@ -220,7 +220,7 @@ namespace PointOfSaleForms
             this.customTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.salesDetailsDTOBindingSource, "Price", true));
             this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox2.Location = new System.Drawing.Point(380, 281);
+            this.customTextBox2.Location = new System.Drawing.Point(380, 191);
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox2.Multiline = false;
             this.customTextBox2.Name = "customTextBox2";
@@ -244,7 +244,7 @@ namespace PointOfSaleForms
             this.customTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.salesDetailsDTOBindingSource, "Discount", true));
             this.customTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox3.Location = new System.Drawing.Point(380, 320);
+            this.customTextBox3.Location = new System.Drawing.Point(380, 230);
             this.customTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox3.Multiline = false;
             this.customTextBox3.Name = "customTextBox3";
@@ -268,7 +268,7 @@ namespace PointOfSaleForms
             this.customTextBox4.DataBindings.Add(new System.Windows.Forms.Binding("TextProperty", this.salesDetailsDTOBindingSource, "TotalAmount", true));
             this.customTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customTextBox4.Location = new System.Drawing.Point(380, 381);
+            this.customTextBox4.Location = new System.Drawing.Point(380, 291);
             this.customTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox4.Multiline = false;
             this.customTextBox4.Name = "customTextBox4";
@@ -285,7 +285,7 @@ namespace PointOfSaleForms
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(266, 364);
+            this.label2.Location = new System.Drawing.Point(266, 274);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(367, 3);
             this.label2.TabIndex = 13;
@@ -295,7 +295,10 @@ namespace PointOfSaleForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 592);
+            this.ClientSize = new System.Drawing.Size(647, 502);
+            this.FormDescription = "This is where you can adjust the quantity purchase of the customer.";
+            this.FormIcon = global::PointOfSaleForms.Properties.Resources.Pictogrammers_Material_Numeric_positive_1_32;
+            this.FormTitle = "Sales Adjustment";
             this.HideSaveNew = true;
             this.Name = "ManageSalesQty";
             this.Text = "ManageSalesQty";

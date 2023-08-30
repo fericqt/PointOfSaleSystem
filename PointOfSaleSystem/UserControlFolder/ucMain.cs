@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FerPROJ.FerFORMS.FrmManageMain;
 
 namespace PointOfSaleSystem.UserControlFolder
 {
@@ -36,6 +37,15 @@ namespace PointOfSaleSystem.UserControlFolder
         private void manufacturerCustomButton_Click(object sender, EventArgs e)
         {
             new FormLayer.ListForms().ListOfManufacturer(false, out string sout);
+        }
+
+        private void productBarcodeCustomButton_Click(object sender, EventArgs e)
+        {
+            using (var frm = new ManageBarcodeScanner())
+            {
+                frm.CurrentFormMode = FormMode.Add;
+                frm.ShowDialog();
+            }
         }
     }
 }

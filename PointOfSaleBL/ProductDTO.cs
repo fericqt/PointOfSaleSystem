@@ -18,7 +18,7 @@ namespace PointOfSaleBL
         public string ProductCategory { get; set; }
         [Required]
         public string ProductDescription { get; set; }
-        public string ProductBarcode { get; set; } = CustomGet.RandomString(5);
+        public string ProductBarcode { get; set; } = CustomGet.RandomString(3);
         public string ProductExpiration { get; set; }
         [Required]
         public string ProductManufacturer { get; set; }

@@ -37,6 +37,11 @@ namespace PointOfSaleDB
             string[] fieldToExclude = {"PriceIncrease" };
             return conn.GetData<ProductDTO>($"SELECT * FROM {tableName} WHERE ProductCode = '{idTrack}'", fieldToExclude);
         }
+        public ProductDTO GetByBarcode(string barcode)
+        {
+            string[] fieldToExclude = { "PriceIncrease" };
+            return conn.GetData<ProductDTO>($"SELECT * FROM {tableName} WHERE ProductBarcode = '{barcode}'", fieldToExclude);
+        }
 
         public string GetDetailsById(string idTrack)
         {

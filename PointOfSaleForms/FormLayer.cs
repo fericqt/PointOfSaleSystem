@@ -86,7 +86,7 @@ namespace PointOfSaleForms
                 {
                     frm.Manage_IdTrack = idTrack;
                     frm.CurrentFormMode = formMode;
-                    frm.ShowDialog();
+                     frm.ShowDialog();
                     return frm.CurrentFormResult;
                 }
             }
@@ -127,6 +127,16 @@ namespace PointOfSaleForms
                     frm.Manage_IdTrack = idTrack;
                     frm.CurrentFormMode = formMode;
                     frm.ShowDialog();
+                    return frm.CurrentFormResult;
+                }
+            }
+            public bool ManageBarcodeScanner(out string idTrack, FormMode formMode)
+            {
+                using (ManageBarcodeScanner frm = new ManageBarcodeScanner())
+                {
+                    frm.CurrentFormMode = formMode;
+                    frm.ShowDialog();
+                    idTrack = frm.Manage_IdTrack;
                     return frm.CurrentFormResult;
                 }
             }

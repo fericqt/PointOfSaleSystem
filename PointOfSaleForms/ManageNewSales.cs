@@ -45,6 +45,33 @@ namespace PointOfSaleForms
             keyboardShortcuts[Keys.F3] = TenderAmount;
             keyboardShortcuts[Keys.F4] = PostTransaction;
             keyboardShortcuts[Keys.F5] = AddCustomerName;
+            keyboardShortcuts[Keys.F6] = ScanBarcode;
+        }
+        private void ScanBarcode()
+        {
+            try
+            {
+                if (new FormLayer.ManageForm().ManageBarcodeScanner(out string pBarcode, FormMode.Add))
+                {
+                    var pCode = new ProductDB().GetByBarcode(pBarcode).ProductCode;
+
+                    using (ManageSalesQty frm = new ManageSalesQty())
+                    {
+                        frm.Manage_IdTrack = pCode;
+                        frm.CurrentFormMode = FormMode.Add;
+                        frm.ShowDialog();
+                        if (frm.CurrentFormResult)
+                        {
+                            MyDTO.AddItem(frm.MyDTO);
+                        }
+                    }
+                }
+                SetReset();
+            }
+            catch (Exception)
+            {
+                CustomShowMessage.WarningMessageBox("No corresponding product for this barcode!", "Warning");
+            }
         }
         private void NewTransaction()
         {

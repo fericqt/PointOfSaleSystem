@@ -31,6 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\DLL\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\DLL\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\DLL\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\DLL\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\DLL\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="FerPROJ">
       <HintPath>..\DLL\FerPROJ.dll</HintPath>
     </Reference>
@@ -44,6 +59,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\DLL\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\DLL\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormLayer.cs" />
@@ -82,6 +103,12 @@
     </Compile>
     <Compile Include="ManageAddCustomer.Designer.cs">
       <DependentUpon>ManageAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBarcodeScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBarcodeScanner.Designer.cs">
+      <DependentUpon>ManageBarcodeScanner.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageLogin.cs">
       <SubType>Form</SubType>
@@ -138,6 +165,11 @@
       <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PointOfSaleBL\PointOfSaleBL.csproj">
@@ -176,6 +208,9 @@
     <EmbeddedResource Include="ManageAddCustomer.resx">
       <DependentUpon>ManageAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageBarcodeScanner.resx">
+      <DependentUpon>ManageBarcodeScanner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageLogin.resx">
       <DependentUpon>ManageLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +238,10 @@
     <EmbeddedResource Include="ManageUser.resx">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\DataSources\PointOfSaleBL.ManufacturerDTO.datasource" />
@@ -212,6 +251,12 @@
     <None Include="Properties\DataSources\PointOfSaleBL.SalesDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.UnitOfMeasureDTO.datasource" />
     <None Include="Properties\DataSources\PointOfSaleBL.UserDTO.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Ecommerce-Barcode-Scanner.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictogrammers-Material-Numeric-positive-1.32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
