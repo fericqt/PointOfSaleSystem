@@ -31,7 +31,9 @@ namespace PointOfSaleReports
             var rpt = new crSalesReceipt();
             string sSelect = $"SELECT * FROM tblsales WHERE TransNo = '{transNo}'";
             string sSelectD = $"SELECT * FROM tblsalesdetails WHERE TransNo = '{transNo}'";
+            string sSelectP = $"SELECT * FROM tblproduct";
 
+            rpt.Database.Tables[2].SetDataSource(new SalesDB().GetData(sSelectP));
             rpt.Database.Tables[1].SetDataSource(new SalesDB().GetData(sSelect));
             rpt.Database.Tables[0].SetDataSource(new SalesDB().GetData(sSelectD));
 

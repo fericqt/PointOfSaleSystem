@@ -4,13 +4,6 @@ using PointOfSaleDB;
 using PointOfSaleReports;
 using PointOfSaleSettings;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointOfSaleForms
@@ -49,33 +42,28 @@ namespace PointOfSaleForms
         }
         private void ScanBarcode()
         {
-            try
-            {
-                if (new FormLayer.ManageForm().ManageBarcodeScanner(out string pBarcode, FormMode.Add))
-                {
-                    var pCode = new ProductDB().GetByBarcode(pBarcode).ProductCode;
 
-                    using (ManageSalesQty frm = new ManageSalesQty())
+            if (new FormLayer.ManageForm().ManageBarcodeScanner(out string pCode, FormMode.Add))
+            {
+
+                using (ManageSalesQty frm = new ManageSalesQty())
+                {
+                    frm.Manage_IdTrack = pCode;
+                    frm.CurrentFormMode = FormMode.Add;
+                    frm.ShowDialog();
+                    if (frm.CurrentFormResult)
                     {
-                        frm.Manage_IdTrack = pCode;
-                        frm.CurrentFormMode = FormMode.Add;
-                        frm.ShowDialog();
-                        if (frm.CurrentFormResult)
-                        {
-                            MyDTO.AddItem(frm.MyDTO);
-                        }
+                        MyDTO.AddItem(frm.MyDTO);
+                        SetReset();
+                        ScanBarcode();
                     }
                 }
-                SetReset();
             }
-            catch (Exception)
-            {
-                CustomShowMessage.WarningMessageBox("No corresponding product for this barcode!", "Warning");
-            }
+
         }
         private void NewTransaction()
         {
-            if(new FormLayer.ListForms().ListOfProducts(true, out string pCode))
+            if (new FormLayer.ListForms().ListOfProducts(true, out string pCode))
             {
                 using (ManageSalesQty frm = new ManageSalesQty())
                 {
@@ -85,10 +73,11 @@ namespace PointOfSaleForms
                     if (frm.CurrentFormResult)
                     {
                         MyDTO.AddItem(frm.MyDTO);
+                        SetReset();
+                        NewTransaction();
                     }
                 }
             }
-            SetReset();
         }
         private void RemoveItem()
         {
@@ -110,9 +99,9 @@ namespace PointOfSaleForms
         }
         private void PostTransaction()
         {
-            if(new SalesDB().SaveData(MyDTO))
+            if (new SalesDB().SaveData(MyDTO))
             {
-                if(CustomShowMessage.AskMessageBox("Do you want to print transaction?", "Confirmation"))
+                if (CustomShowMessage.AskMessageBox("Do you want to print transaction?", "Confirmation"))
                 {
                     new TReports().PreviewReport(TReports.TReportsList.SalesReceipt, MyDTO.TransNo);
                 }
@@ -133,9 +122,6 @@ namespace PointOfSaleForms
             SetReset();
         }
 
-        private void customLabelDesc9_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

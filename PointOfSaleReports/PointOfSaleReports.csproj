@@ -55,6 +55,7 @@
       <DependentUpon>crSalesReceipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Model\ProductModel.cs" />
     <Compile Include="Model\SalesDetailsModel.cs" />
     <Compile Include="Model\SalesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

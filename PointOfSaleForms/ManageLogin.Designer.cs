@@ -106,6 +106,7 @@ namespace PointOfSaleForms
             this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox1.Multiline = false;
             this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.OnFocus = true;
             this.customTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
@@ -134,6 +135,7 @@ namespace PointOfSaleForms
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox2.Multiline = false;
             this.customTextBox2.Name = "customTextBox2";
+            this.customTextBox2.OnFocus = false;
             this.customTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox2.PasswordChar = false;
             this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;

@@ -41,23 +41,27 @@ namespace PointOfSaleSystem.UserControlFolder
             this.ucLabelMain4.BackColor = System.Drawing.Color.Silver;
             this.ucLabelMain4.Location = new System.Drawing.Point(5, 0);
             this.ucLabelMain4.Size = new System.Drawing.Size(950, 5);
+            this.ucLabelMain4.Text = "";
             // 
             // ucLabelMain3
             // 
             this.ucLabelMain3.BackColor = System.Drawing.Color.Silver;
             this.ucLabelMain3.Location = new System.Drawing.Point(5, 537);
             this.ucLabelMain3.Size = new System.Drawing.Size(950, 5);
+            this.ucLabelMain3.Text = "";
             // 
             // ucLabelMain2
             // 
             this.ucLabelMain2.BackColor = System.Drawing.Color.Silver;
             this.ucLabelMain2.Location = new System.Drawing.Point(955, 0);
             this.ucLabelMain2.Size = new System.Drawing.Size(5, 542);
+            this.ucLabelMain2.Text = "";
             // 
             // ucLabelMain1
             // 
             this.ucLabelMain1.BackColor = System.Drawing.Color.Silver;
             this.ucLabelMain1.Size = new System.Drawing.Size(5, 542);
+            this.ucLabelMain1.Text = "";
             // 
             // ucPanelMain
             // 

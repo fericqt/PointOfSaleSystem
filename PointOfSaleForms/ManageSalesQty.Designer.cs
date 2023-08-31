@@ -170,6 +170,7 @@ namespace PointOfSaleForms
             this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox1.Multiline = false;
             this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.OnFocus = true;
             this.customTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
@@ -224,6 +225,7 @@ namespace PointOfSaleForms
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox2.Multiline = false;
             this.customTextBox2.Name = "customTextBox2";
+            this.customTextBox2.OnFocus = false;
             this.customTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox2.PasswordChar = false;
             this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
@@ -248,6 +250,7 @@ namespace PointOfSaleForms
             this.customTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox3.Multiline = false;
             this.customTextBox3.Name = "customTextBox3";
+            this.customTextBox3.OnFocus = false;
             this.customTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox3.PasswordChar = false;
             this.customTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
@@ -272,6 +275,7 @@ namespace PointOfSaleForms
             this.customTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox4.Multiline = false;
             this.customTextBox4.Name = "customTextBox4";
+            this.customTextBox4.OnFocus = false;
             this.customTextBox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.customTextBox4.PasswordChar = false;
             this.customTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
@@ -302,6 +306,7 @@ namespace PointOfSaleForms
             this.HideSaveNew = true;
             this.Name = "ManageSalesQty";
             this.Text = "ManageSalesQty";
+            this.TopMost = true;
             this.basePnl2.ResumeLayout(false);
             this.PanelMain3.ResumeLayout(false);
             this.PanelMain3.PerformLayout();

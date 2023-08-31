@@ -36,6 +36,8 @@ namespace PointOfSaleForms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.customLabelDesc12 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.customButton6 = new FerPROJ.CustomButton();
             this.customLabelDesc7 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc11 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customButton5 = new FerPROJ.CustomButton();
@@ -48,8 +50,10 @@ namespace PointOfSaleForms
             this.customLabelDesc6 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customPanel1 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.salesDetailsDTOCustomDataGridView = new FerPROJ.FerCONTROLS.CustomDataGridView();
+            this.salesDetailsDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customPanel2 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.customLabelDesc10 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.salesDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customLabelDesc9 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc8 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc1 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
@@ -67,10 +71,6 @@ namespace PointOfSaleForms
             this.label1 = new System.Windows.Forms.Label();
             this.customLabelDesc3 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc2 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
-            this.customButton6 = new FerPROJ.CustomButton();
-            this.customLabelDesc12 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
-            this.salesDetailsDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.salesDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,8 +86,8 @@ namespace PointOfSaleForms
             this.tableLayoutPanel1.SuspendLayout();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDetailsDTOCustomDataGridView)).BeginInit();
-            this.customPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDetailsDTOBindingSource)).BeginInit();
+            this.customPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDTOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +109,7 @@ namespace PointOfSaleForms
             this.PanelMain3.Controls.Add(this.customPanel2);
             this.PanelMain3.Controls.Add(this.panel1);
             this.PanelMain3.Location = new System.Drawing.Point(0, 0);
-            this.PanelMain3.Size = new System.Drawing.Size(1240, 735);
+            this.PanelMain3.Size = new System.Drawing.Size(1249, 749);
             // 
             // baseButtonAddNew
             // 
@@ -120,9 +120,9 @@ namespace PointOfSaleForms
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 605);
+            this.panel1.Location = new System.Drawing.Point(0, 619);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 130);
+            this.panel1.Size = new System.Drawing.Size(1249, 130);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -153,8 +153,41 @@ namespace PointOfSaleForms
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.07692F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.92308F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1238, 128);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1247, 128);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // customLabelDesc12
+            // 
+            this.customLabelDesc12.AutoSize = true;
+            this.customLabelDesc12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customLabelDesc12.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc12.Location = new System.Drawing.Point(703, 0);
+            this.customLabelDesc12.Name = "customLabelDesc12";
+            this.customLabelDesc12.Size = new System.Drawing.Size(134, 29);
+            this.customLabelDesc12.TabIndex = 10;
+            this.customLabelDesc12.Text = "Scan Barcode";
+            this.customLabelDesc12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // customButton6
+            // 
+            this.customButton6.BackColor = System.Drawing.Color.Silver;
+            this.customButton6.BackgroundColor = System.Drawing.Color.Silver;
+            this.customButton6.BorderColor = System.Drawing.Color.Green;
+            this.customButton6.BorderRadius = 20;
+            this.customButton6.BorderSize = 0;
+            this.customButton6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customButton6.FlatAppearance.BorderSize = 0;
+            this.customButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton6.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton6.ForeColor = System.Drawing.Color.Black;
+            this.customButton6.Location = new System.Drawing.Point(143, 32);
+            this.customButton6.Name = "customButton6";
+            this.customButton6.Size = new System.Drawing.Size(134, 93);
+            this.customButton6.TabIndex = 9;
+            this.customButton6.Text = "F2";
+            this.customButton6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.customButton6.TextColor = System.Drawing.Color.Black;
+            this.customButton6.UseVisualStyleBackColor = false;
             // 
             // customLabelDesc7
             // 
@@ -335,7 +368,7 @@ namespace PointOfSaleForms
             this.customPanel1.ShowLeftShadow = true;
             this.customPanel1.ShowRightShadow = true;
             this.customPanel1.ShowTopShadow = true;
-            this.customPanel1.Size = new System.Drawing.Size(850, 605);
+            this.customPanel1.Size = new System.Drawing.Size(859, 619);
             this.customPanel1.TabIndex = 1;
             // 
             // salesDetailsDTOCustomDataGridView
@@ -400,8 +433,12 @@ namespace PointOfSaleForms
             this.salesDetailsDTOCustomDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.salesDetailsDTOCustomDataGridView.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.salesDetailsDTOCustomDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.salesDetailsDTOCustomDataGridView.Size = new System.Drawing.Size(850, 605);
+            this.salesDetailsDTOCustomDataGridView.Size = new System.Drawing.Size(859, 619);
             this.salesDetailsDTOCustomDataGridView.TabIndex = 0;
+            // 
+            // salesDetailsDTOBindingSource
+            // 
+            this.salesDetailsDTOBindingSource.DataSource = typeof(PointOfSaleBL.SalesDetailsDTO);
             // 
             // customPanel2
             // 
@@ -426,8 +463,9 @@ namespace PointOfSaleForms
             this.customPanel2.Controls.Add(this.customLabelDesc3);
             this.customPanel2.Controls.Add(this.customLabelDesc2);
             this.customPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.customPanel2.Location = new System.Drawing.Point(850, 0);
+            this.customPanel2.Location = new System.Drawing.Point(859, 0);
             this.customPanel2.Name = "customPanel2";
+            this.customPanel2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.customPanel2.PanelBackColor = System.Drawing.Color.Silver;
             this.customPanel2.ShadowColor = System.Drawing.Color.White;
             this.customPanel2.ShadowSize = 20;
@@ -436,7 +474,7 @@ namespace PointOfSaleForms
             this.customPanel2.ShowLeftShadow = true;
             this.customPanel2.ShowRightShadow = true;
             this.customPanel2.ShowTopShadow = true;
-            this.customPanel2.Size = new System.Drawing.Size(390, 605);
+            this.customPanel2.Size = new System.Drawing.Size(390, 619);
             this.customPanel2.TabIndex = 2;
             // 
             // customLabelDesc10
@@ -445,11 +483,15 @@ namespace PointOfSaleForms
             this.customLabelDesc10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "ProcessedBy", true));
             this.customLabelDesc10.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc10.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc10.Location = new System.Drawing.Point(149, 177);
+            this.customLabelDesc10.Location = new System.Drawing.Point(158, 143);
             this.customLabelDesc10.Name = "customLabelDesc10";
             this.customLabelDesc10.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc10.TabIndex = 18;
             this.customLabelDesc10.Text = "Date Today:";
+            // 
+            // salesDTOBindingSource
+            // 
+            this.salesDTOBindingSource.DataSource = typeof(PointOfSaleBL.SalesDTO);
             // 
             // customLabelDesc9
             // 
@@ -457,12 +499,11 @@ namespace PointOfSaleForms
             this.customLabelDesc9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "CustomerName", true));
             this.customLabelDesc9.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc9.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc9.Location = new System.Drawing.Point(149, 110);
+            this.customLabelDesc9.Location = new System.Drawing.Point(158, 76);
             this.customLabelDesc9.Name = "customLabelDesc9";
             this.customLabelDesc9.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc9.TabIndex = 17;
             this.customLabelDesc9.Text = "Date Today:";
-            this.customLabelDesc9.Click += new System.EventHandler(this.customLabelDesc9_Click);
             // 
             // customLabelDesc8
             // 
@@ -470,7 +511,7 @@ namespace PointOfSaleForms
             this.customLabelDesc8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "DateReference", true));
             this.customLabelDesc8.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc8.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc8.Location = new System.Drawing.Point(149, 42);
+            this.customLabelDesc8.Location = new System.Drawing.Point(154, 13);
             this.customLabelDesc8.Name = "customLabelDesc8";
             this.customLabelDesc8.Size = new System.Drawing.Size(132, 34);
             this.customLabelDesc8.TabIndex = 16;
@@ -481,21 +522,21 @@ namespace PointOfSaleForms
             this.customLabelDesc1.AutoSize = true;
             this.customLabelDesc1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc1.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc1.Location = new System.Drawing.Point(23, 13);
+            this.customLabelDesc1.Location = new System.Drawing.Point(28, 13);
             this.customLabelDesc1.Name = "customLabelDesc1";
-            this.customLabelDesc1.Size = new System.Drawing.Size(132, 34);
+            this.customLabelDesc1.Size = new System.Drawing.Size(69, 34);
             this.customLabelDesc1.TabIndex = 15;
-            this.customLabelDesc1.Text = "Date Today:";
+            this.customLabelDesc1.Text = "DATE:";
             // 
             // customLabelTitle10
             // 
             this.customLabelTitle10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "SubTotal", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle10.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle10.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle10.Location = new System.Drawing.Point(74, 254);
+            this.customLabelTitle10.Location = new System.Drawing.Point(45, 227);
             this.customLabelTitle10.Name = "customLabelTitle10";
             this.customLabelTitle10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.customLabelTitle10.Size = new System.Drawing.Size(213, 36);
+            this.customLabelTitle10.Size = new System.Drawing.Size(178, 36);
             this.customLabelTitle10.TabIndex = 14;
             this.customLabelTitle10.Text = "0.00";
             // 
@@ -504,10 +545,10 @@ namespace PointOfSaleForms
             this.customLabelTitle9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "TotalDiscount", true));
             this.customLabelTitle9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle9.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle9.Location = new System.Drawing.Point(74, 326);
+            this.customLabelTitle9.Location = new System.Drawing.Point(34, 290);
             this.customLabelTitle9.Name = "customLabelTitle9";
             this.customLabelTitle9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.customLabelTitle9.Size = new System.Drawing.Size(213, 36);
+            this.customLabelTitle9.Size = new System.Drawing.Size(189, 36);
             this.customLabelTitle9.TabIndex = 13;
             this.customLabelTitle9.Text = "0.00";
             // 
@@ -516,10 +557,10 @@ namespace PointOfSaleForms
             this.customLabelTitle8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "GrossTotal", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle8.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle8.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle8.Location = new System.Drawing.Point(74, 388);
+            this.customLabelTitle8.Location = new System.Drawing.Point(34, 362);
             this.customLabelTitle8.Name = "customLabelTitle8";
             this.customLabelTitle8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.customLabelTitle8.Size = new System.Drawing.Size(213, 36);
+            this.customLabelTitle8.Size = new System.Drawing.Size(189, 36);
             this.customLabelTitle8.TabIndex = 12;
             this.customLabelTitle8.Text = "0.00";
             // 
@@ -528,7 +569,7 @@ namespace PointOfSaleForms
             this.customLabelTitle7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "TenderChange", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle7.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle7.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle7.Location = new System.Drawing.Point(171, 554);
+            this.customLabelTitle7.Location = new System.Drawing.Point(158, 518);
             this.customLabelTitle7.Name = "customLabelTitle7";
             this.customLabelTitle7.Size = new System.Drawing.Size(206, 36);
             this.customLabelTitle7.TabIndex = 11;
@@ -539,7 +580,7 @@ namespace PointOfSaleForms
             this.customLabelTitle4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salesDTOBindingSource, "TenderAmount", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
             this.customLabelTitle4.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle4.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle4.Location = new System.Drawing.Point(171, 475);
+            this.customLabelTitle4.Location = new System.Drawing.Point(158, 439);
             this.customLabelTitle4.Name = "customLabelTitle4";
             this.customLabelTitle4.Size = new System.Drawing.Size(206, 36);
             this.customLabelTitle4.TabIndex = 10;
@@ -550,22 +591,22 @@ namespace PointOfSaleForms
             this.customLabelTitle5.AutoSize = true;
             this.customLabelTitle5.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle5.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle5.Location = new System.Drawing.Point(23, 518);
+            this.customLabelTitle5.Location = new System.Drawing.Point(28, 518);
             this.customLabelTitle5.Name = "customLabelTitle5";
-            this.customLabelTitle5.Size = new System.Drawing.Size(204, 36);
+            this.customLabelTitle5.Size = new System.Drawing.Size(107, 36);
             this.customLabelTitle5.TabIndex = 9;
-            this.customLabelTitle5.Text = "Tendered Change:";
+            this.customLabelTitle5.Text = "CHANGE:";
             // 
             // customLabelTitle6
             // 
             this.customLabelTitle6.AutoSize = true;
             this.customLabelTitle6.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle6.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle6.Location = new System.Drawing.Point(23, 439);
+            this.customLabelTitle6.Location = new System.Drawing.Point(28, 439);
             this.customLabelTitle6.Name = "customLabelTitle6";
-            this.customLabelTitle6.Size = new System.Drawing.Size(206, 36);
+            this.customLabelTitle6.Size = new System.Drawing.Size(78, 36);
             this.customLabelTitle6.TabIndex = 8;
-            this.customLabelTitle6.Text = "Tendered Amount:";
+            this.customLabelTitle6.Text = "CASH:";
             // 
             // label2
             // 
@@ -581,33 +622,33 @@ namespace PointOfSaleForms
             this.customLabelTitle3.AutoSize = true;
             this.customLabelTitle3.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle3.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle3.Location = new System.Drawing.Point(250, 362);
+            this.customLabelTitle3.Location = new System.Drawing.Point(229, 362);
             this.customLabelTitle3.Name = "customLabelTitle3";
-            this.customLabelTitle3.Size = new System.Drawing.Size(127, 36);
+            this.customLabelTitle3.Size = new System.Drawing.Size(148, 36);
             this.customLabelTitle3.TabIndex = 6;
-            this.customLabelTitle3.Text = "GrossTotal";
+            this.customLabelTitle3.Text = "GROSSTOTAL";
             // 
             // customLabelTitle2
             // 
             this.customLabelTitle2.AutoSize = true;
             this.customLabelTitle2.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle2.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle2.Location = new System.Drawing.Point(270, 290);
+            this.customLabelTitle2.Location = new System.Drawing.Point(258, 290);
             this.customLabelTitle2.Name = "customLabelTitle2";
-            this.customLabelTitle2.Size = new System.Drawing.Size(106, 36);
+            this.customLabelTitle2.Size = new System.Drawing.Size(120, 36);
             this.customLabelTitle2.TabIndex = 5;
-            this.customLabelTitle2.Text = "Discount";
+            this.customLabelTitle2.Text = "DISCOUNT";
             // 
             // customLabelTitle1
             // 
             this.customLabelTitle1.AutoSize = true;
             this.customLabelTitle1.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
             this.customLabelTitle1.ForeColor = System.Drawing.Color.Black;
-            this.customLabelTitle1.Location = new System.Drawing.Point(269, 218);
+            this.customLabelTitle1.Location = new System.Drawing.Point(258, 227);
             this.customLabelTitle1.Name = "customLabelTitle1";
-            this.customLabelTitle1.Size = new System.Drawing.Size(107, 36);
+            this.customLabelTitle1.Size = new System.Drawing.Size(119, 36);
             this.customLabelTitle1.TabIndex = 4;
-            this.customLabelTitle1.Text = "SubTotal";
+            this.customLabelTitle1.Text = "SUBTOTAL";
             // 
             // label1
             // 
@@ -623,63 +664,22 @@ namespace PointOfSaleForms
             this.customLabelDesc3.AutoSize = true;
             this.customLabelDesc3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc3.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc3.Location = new System.Drawing.Point(23, 143);
+            this.customLabelDesc3.Location = new System.Drawing.Point(28, 143);
             this.customLabelDesc3.Name = "customLabelDesc3";
-            this.customLabelDesc3.Size = new System.Drawing.Size(151, 34);
+            this.customLabelDesc3.Size = new System.Drawing.Size(77, 34);
             this.customLabelDesc3.TabIndex = 2;
-            this.customLabelDesc3.Text = "Processed By:";
+            this.customLabelDesc3.Text = "STAFF:";
             // 
             // customLabelDesc2
             // 
             this.customLabelDesc2.AutoSize = true;
             this.customLabelDesc2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabelDesc2.ForeColor = System.Drawing.Color.Black;
-            this.customLabelDesc2.Location = new System.Drawing.Point(23, 76);
+            this.customLabelDesc2.Location = new System.Drawing.Point(28, 76);
             this.customLabelDesc2.Name = "customLabelDesc2";
-            this.customLabelDesc2.Size = new System.Drawing.Size(177, 34);
+            this.customLabelDesc2.Size = new System.Drawing.Size(124, 34);
             this.customLabelDesc2.TabIndex = 1;
-            this.customLabelDesc2.Text = "CustomerName:";
-            // 
-            // customButton6
-            // 
-            this.customButton6.BackColor = System.Drawing.Color.Silver;
-            this.customButton6.BackgroundColor = System.Drawing.Color.Silver;
-            this.customButton6.BorderColor = System.Drawing.Color.Green;
-            this.customButton6.BorderRadius = 20;
-            this.customButton6.BorderSize = 0;
-            this.customButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customButton6.FlatAppearance.BorderSize = 0;
-            this.customButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton6.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton6.ForeColor = System.Drawing.Color.Black;
-            this.customButton6.Location = new System.Drawing.Point(143, 32);
-            this.customButton6.Name = "customButton6";
-            this.customButton6.Size = new System.Drawing.Size(134, 93);
-            this.customButton6.TabIndex = 9;
-            this.customButton6.Text = "F2";
-            this.customButton6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.customButton6.TextColor = System.Drawing.Color.Black;
-            this.customButton6.UseVisualStyleBackColor = false;
-            // 
-            // customLabelDesc12
-            // 
-            this.customLabelDesc12.AutoSize = true;
-            this.customLabelDesc12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customLabelDesc12.Font = new System.Drawing.Font("Poppins", 10F);
-            this.customLabelDesc12.Location = new System.Drawing.Point(703, 0);
-            this.customLabelDesc12.Name = "customLabelDesc12";
-            this.customLabelDesc12.Size = new System.Drawing.Size(134, 29);
-            this.customLabelDesc12.TabIndex = 10;
-            this.customLabelDesc12.Text = "Scan Barcode";
-            this.customLabelDesc12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // salesDetailsDTOBindingSource
-            // 
-            this.salesDetailsDTOBindingSource.DataSource = typeof(PointOfSaleBL.SalesDetailsDTO);
-            // 
-            // salesDTOBindingSource
-            // 
-            this.salesDTOBindingSource.DataSource = typeof(PointOfSaleBL.SalesDTO);
+            this.customLabelDesc2.Text = "CUSTOMER:";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -717,7 +717,7 @@ namespace PointOfSaleForms
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDescription";
             this.dataGridViewTextBoxColumn5.FillWeight = 200F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "ProductDescription";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Description";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
@@ -759,6 +759,7 @@ namespace PointOfSaleForms
             this.HideHeader = true;
             this.MinimizeBox = true;
             this.Name = "ManageNewSales";
+            this.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Text = "ManageNewSales";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.basePnl2.ResumeLayout(false);
@@ -768,9 +769,9 @@ namespace PointOfSaleForms
             this.tableLayoutPanel1.PerformLayout();
             this.customPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.salesDetailsDTOCustomDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesDetailsDTOBindingSource)).EndInit();
             this.customPanel2.ResumeLayout(false);
             this.customPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.salesDetailsDTOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesDTOBindingSource)).EndInit();
             this.ResumeLayout(false);
 

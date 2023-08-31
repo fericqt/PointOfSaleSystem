@@ -27,7 +27,6 @@ namespace PointOfSaleForms
             switch (CurrentFormMode)
             {
                 case FormMode.Add:
-                    customTextBox1.Focus();
                     var tblp = new ProductDB().GetById(Manage_IdTrack);
                     MyDTO.RemainingQty = tblp.RemainingQty;
                     MyDTO.ProductCode = tblp.ProductCode;
@@ -38,6 +37,7 @@ namespace PointOfSaleForms
                     break;
             }
             salesDetailsDTOBindingSource.DataSource = MyDTO;
+            customTextBox1.Focus();
         }
         protected override bool OnSaveData()
         {
