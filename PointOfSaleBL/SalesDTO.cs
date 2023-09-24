@@ -30,6 +30,11 @@ namespace PointOfSaleBL
         {
             PurchaseItem.Add(itemToAdd);
         }
+        public bool AddItemRange(List<SalesDetailsDTO> itemToAdd)
+        {
+            if (itemToAdd.Count <= 0) return false;
+            else PurchaseItem.AddRange(itemToAdd); return true;
+        }
         public void RemoveItem(SalesDetailsDTO itemToRemove)
         {
             PurchaseItem.Remove(itemToRemove);

@@ -48,8 +48,21 @@ namespace PointOfSaleForms
             this.customLabelDesc4 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc5 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc6 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.customLabelDesc13 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
+            this.customButton7 = new FerPROJ.CustomButton();
+            this.customButton8 = new FerPROJ.CustomButton();
+            this.customLabelDesc14 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customPanel1 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.salesDetailsDTOCustomDataGridView = new FerPROJ.FerCONTROLS.CustomDataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesDetailsDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customPanel2 = new FerPROJ.FerCONTROLS.CustomPanel();
             this.customLabelDesc10 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
@@ -71,15 +84,6 @@ namespace PointOfSaleForms
             this.label1 = new System.Windows.Forms.Label();
             this.customLabelDesc3 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
             this.customLabelDesc2 = new FerPROJ.FerCONTROLS.CustomLabelDesc();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.basePnl2.SuspendLayout();
             this.PanelMain3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -127,14 +131,16 @@ namespace PointOfSaleForms
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnCount = 9;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc12, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.customButton6, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc7, 3, 0);
@@ -147,6 +153,10 @@ namespace PointOfSaleForms
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.customLabelDesc6, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.customLabelDesc13, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.customButton7, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.customButton8, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.customLabelDesc14, 7, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -354,6 +364,68 @@ namespace PointOfSaleForms
             this.customLabelDesc6.Text = "Tender Amount";
             this.customLabelDesc6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // customLabelDesc13
+            // 
+            this.customLabelDesc13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customLabelDesc13.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc13.Location = new System.Drawing.Point(843, 0);
+            this.customLabelDesc13.Name = "customLabelDesc13";
+            this.customLabelDesc13.Size = new System.Drawing.Size(134, 29);
+            this.customLabelDesc13.TabIndex = 11;
+            this.customLabelDesc13.Text = "Export to Excel";
+            this.customLabelDesc13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // customButton7
+            // 
+            this.customButton7.BackColor = System.Drawing.Color.Silver;
+            this.customButton7.BackgroundColor = System.Drawing.Color.Silver;
+            this.customButton7.BorderColor = System.Drawing.Color.Green;
+            this.customButton7.BorderRadius = 20;
+            this.customButton7.BorderSize = 0;
+            this.customButton7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customButton7.FlatAppearance.BorderSize = 0;
+            this.customButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton7.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold);
+            this.customButton7.ForeColor = System.Drawing.Color.Black;
+            this.customButton7.Location = new System.Drawing.Point(843, 32);
+            this.customButton7.Name = "customButton7";
+            this.customButton7.Size = new System.Drawing.Size(134, 93);
+            this.customButton7.TabIndex = 12;
+            this.customButton7.Text = "F7";
+            this.customButton7.TextColor = System.Drawing.Color.Black;
+            this.customButton7.UseVisualStyleBackColor = false;
+            // 
+            // customButton8
+            // 
+            this.customButton8.BackColor = System.Drawing.Color.Silver;
+            this.customButton8.BackgroundColor = System.Drawing.Color.Silver;
+            this.customButton8.BorderColor = System.Drawing.Color.Green;
+            this.customButton8.BorderRadius = 20;
+            this.customButton8.BorderSize = 0;
+            this.customButton8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customButton8.FlatAppearance.BorderSize = 0;
+            this.customButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton8.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold);
+            this.customButton8.ForeColor = System.Drawing.Color.Black;
+            this.customButton8.Location = new System.Drawing.Point(983, 32);
+            this.customButton8.Name = "customButton8";
+            this.customButton8.Size = new System.Drawing.Size(134, 93);
+            this.customButton8.TabIndex = 13;
+            this.customButton8.Text = "F8";
+            this.customButton8.TextColor = System.Drawing.Color.Black;
+            this.customButton8.UseVisualStyleBackColor = false;
+            // 
+            // customLabelDesc14
+            // 
+            this.customLabelDesc14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customLabelDesc14.Font = new System.Drawing.Font("Poppins", 10F);
+            this.customLabelDesc14.Location = new System.Drawing.Point(983, 0);
+            this.customLabelDesc14.Name = "customLabelDesc14";
+            this.customLabelDesc14.Size = new System.Drawing.Size(134, 29);
+            this.customLabelDesc14.TabIndex = 14;
+            this.customLabelDesc14.Text = "Import from Excel";
+            this.customLabelDesc14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // customPanel1
             // 
             this.customPanel1.Controls.Add(this.salesDetailsDTOCustomDataGridView);
@@ -435,6 +507,75 @@ namespace PointOfSaleForms
             this.salesDetailsDTOCustomDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.salesDetailsDTOCustomDataGridView.Size = new System.Drawing.Size(859, 619);
             this.salesDetailsDTOCustomDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdTrack";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdTrack";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "DateReference";
+            this.dataGridViewTextBoxColumn2.HeaderText = "DateReference";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TransNo";
+            this.dataGridViewTextBoxColumn3.HeaderText = "TransNo";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductCode";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ProductCode";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDescription";
+            this.dataGridViewTextBoxColumn5.FillWeight = 200F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Qty";
+            this.dataGridViewTextBoxColumn6.FillWeight = 40F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Qty";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // Discount
+            // 
+            this.Discount.DataPropertyName = "Discount";
+            this.Discount.HeaderText = "Discount";
+            this.Discount.Name = "Discount";
+            this.Discount.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalAmount";
+            this.dataGridViewTextBoxColumn8.HeaderText = "TotalAmount";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // salesDetailsDTOBindingSource
             // 
@@ -681,75 +822,6 @@ namespace PointOfSaleForms
             this.customLabelDesc2.TabIndex = 1;
             this.customLabelDesc2.Text = "CUSTOMER:";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdTrack";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdTrack";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "DateReference";
-            this.dataGridViewTextBoxColumn2.HeaderText = "DateReference";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TransNo";
-            this.dataGridViewTextBoxColumn3.HeaderText = "TransNo";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductCode";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ProductCode";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDescription";
-            this.dataGridViewTextBoxColumn5.FillWeight = 200F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Qty";
-            this.dataGridViewTextBoxColumn6.FillWeight = 40F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Qty";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // Discount
-            // 
-            this.Discount.DataPropertyName = "Discount";
-            this.Discount.HeaderText = "Discount";
-            this.Discount.Name = "Discount";
-            this.Discount.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalAmount";
-            this.dataGridViewTextBoxColumn8.HeaderText = "TotalAmount";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
             // ManageNewSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -757,6 +829,7 @@ namespace PointOfSaleForms
             this.ClientSize = new System.Drawing.Size(1254, 749);
             this.HideFooter = true;
             this.HideHeader = true;
+            this.MaximizeBox = true;
             this.MinimizeBox = true;
             this.Name = "ManageNewSales";
             this.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -825,5 +898,9 @@ namespace PointOfSaleForms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc13;
+        private FerPROJ.CustomButton customButton7;
+        private FerPROJ.CustomButton customButton8;
+        private FerPROJ.FerCONTROLS.CustomLabelDesc customLabelDesc14;
     }
 }

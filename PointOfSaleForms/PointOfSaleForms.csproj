@@ -46,8 +46,20 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>..\DLL\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\DLL\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>..\DLL\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>..\DLL\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="FerPROJ">
       <HintPath>..\DLL\FerPROJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>..\DLL\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,99 +80,67 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormLayer.cs" />
-    <Compile Include="FrmManufacturer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmManufacturer.cs" />
     <Compile Include="FrmManufacturer.Designer.cs">
       <DependentUpon>FrmManufacturer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProductCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmProductCategory.cs" />
     <Compile Include="FrmProductCategory.Designer.cs">
       <DependentUpon>FrmProductCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProductList.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmProductList.cs" />
     <Compile Include="FrmProductList.Designer.cs">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUnitOfMeasure.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmUnitOfMeasure.cs" />
     <Compile Include="FrmUnitOfMeasure.Designer.cs">
       <DependentUpon>FrmUnitOfMeasure.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FrmUsers.cs" />
     <Compile Include="FrmUsers.Designer.cs">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageAddCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageAddCustomer.cs" />
     <Compile Include="ManageAddCustomer.Designer.cs">
       <DependentUpon>ManageAddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageBarcodeScanner.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageBarcodeScanner.cs" />
     <Compile Include="ManageBarcodeScanner.Designer.cs">
       <DependentUpon>ManageBarcodeScanner.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageLogin.cs" />
     <Compile Include="ManageLogin.Designer.cs">
       <DependentUpon>ManageLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageManufacturer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageManufacturer.cs" />
     <Compile Include="ManageManufacturer.Designer.cs">
       <DependentUpon>ManageManufacturer.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageNewSales.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageNewSales.cs" />
     <Compile Include="ManageNewSales.Designer.cs">
       <DependentUpon>ManageNewSales.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageProduct.cs" />
     <Compile Include="ManageProduct.Designer.cs">
       <DependentUpon>ManageProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageProductCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageProductCategory.cs" />
     <Compile Include="ManageProductCategory.Designer.cs">
       <DependentUpon>ManageProductCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageSalesQty.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageSalesQty.cs" />
     <Compile Include="ManageSalesQty.Designer.cs">
       <DependentUpon>ManageSalesQty.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageTenderAmount.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageTenderAmount.cs" />
     <Compile Include="ManageTenderAmount.Designer.cs">
       <DependentUpon>ManageTenderAmount.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageUnitOfMeasure.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageUnitOfMeasure.cs" />
     <Compile Include="ManageUnitOfMeasure.Designer.cs">
       <DependentUpon>ManageUnitOfMeasure.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ManageUser.cs" />
     <Compile Include="ManageUser.Designer.cs">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>

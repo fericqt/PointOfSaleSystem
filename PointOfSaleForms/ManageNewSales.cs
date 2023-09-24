@@ -1,9 +1,12 @@
 ﻿using FerPROJ;
+using FerPROJ.FerCLASS;
 using PointOfSaleBL;
 using PointOfSaleDB;
 using PointOfSaleReports;
 using PointOfSaleSettings;
 using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows.Forms;
 
 namespace PointOfSaleForms
@@ -39,6 +42,42 @@ namespace PointOfSaleForms
             keyboardShortcuts[Keys.F4] = PostTransaction;
             keyboardShortcuts[Keys.F5] = AddCustomerName;
             keyboardShortcuts[Keys.F6] = ScanBarcode;
+            keyboardShortcuts[Keys.F7] = ExportToExcel;
+            keyboardShortcuts[Keys.F8] = ImportFromExcel;
+        }
+        private void ImportFromExcel()
+        {
+            var sb = new StringBuilder();
+            var itemToAdd = new List<SalesDetailsDTO>();
+            //
+            if (CustomGet.ImportFromExcel(out itemToAdd))
+            {
+                foreach(var item in itemToAdd)
+                {
+                    if (new ProductDB().GetById(item.ProductCode) == null)
+                    {
+                        sb.AppendLine($"The ProductCode {item.ProductCode} is not found!");
+                    }
+                }
+
+                if (sb.Length <= 0)
+                {
+                    if (MyDTO.AddItemRange(itemToAdd))
+                    {
+                        CustomShowMessage.InfoMessageBox("Data Imported Successfully.", "Info");
+                        SetReset();
+                    }
+                }
+                else
+                {
+                    CustomShowMessage.WarningMessageBox(sb.ToString(), "Warning");
+                }
+
+            }
+        }
+        private void ExportToExcel()
+        {
+            CustomGet.ExportToExcel(MyDTO.PurchaseItem, "Sales Details");
         }
         private void ScanBarcode()
         {
@@ -65,16 +104,19 @@ namespace PointOfSaleForms
         {
             if (new FormLayer.ListForms().ListOfProducts(true, out string pCode))
             {
-                using (ManageSalesQty frm = new ManageSalesQty())
+                if (pCode != null)
                 {
-                    frm.Manage_IdTrack = pCode;
-                    frm.CurrentFormMode = FormMode.Add;
-                    frm.ShowDialog();
-                    if (frm.CurrentFormResult)
+                    using (ManageSalesQty frm = new ManageSalesQty())
                     {
-                        MyDTO.AddItem(frm.MyDTO);
-                        SetReset();
-                        NewTransaction();
+                        frm.Manage_IdTrack = pCode;
+                        frm.CurrentFormMode = FormMode.Add;
+                        frm.ShowDialog();
+                        if (frm.CurrentFormResult)
+                        {
+                            MyDTO.AddItem(frm.MyDTO);
+                            SetReset();
+                            NewTransaction();
+                        }
                     }
                 }
             }

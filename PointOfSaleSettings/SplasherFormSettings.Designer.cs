@@ -29,17 +29,13 @@ namespace PointOfSaleSettings
         /// </summary>
         private void InitializeComponent()
         {
-            this.customLabelTitle1 = new FerPROJ.FerCONTROLS.CustomLabelTitle();
             this.basePnl2.SuspendLayout();
             this.PlanelSplasherBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // basePnl2
             // 
-            this.basePnl2.Controls.Add(this.customLabelTitle1);
             this.basePnl2.Size = new System.Drawing.Size(416, 146);
-            this.basePnl2.Controls.SetChildIndex(this.PlanelSplasherBottom, 0);
-            this.basePnl2.Controls.SetChildIndex(this.customLabelTitle1, 0);
             // 
             // pbLoadingPercent
             // 
@@ -53,18 +49,6 @@ namespace PointOfSaleSettings
             // 
             this.PlanelSplasherBottom.Location = new System.Drawing.Point(0, 102);
             this.PlanelSplasherBottom.Size = new System.Drawing.Size(416, 44);
-            // 
-            // customLabelTitle1
-            // 
-            this.customLabelTitle1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customLabelTitle1.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customLabelTitle1.ForeColor = System.Drawing.Color.White;
-            this.customLabelTitle1.Location = new System.Drawing.Point(0, 20);
-            this.customLabelTitle1.Name = "customLabelTitle1";
-            this.customLabelTitle1.Size = new System.Drawing.Size(416, 82);
-            this.customLabelTitle1.TabIndex = 3;
-            this.customLabelTitle1.Text = "Welcome to \r\nPoint of Sale System";
-            this.customLabelTitle1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // SplasherFormSettings
             // 
@@ -81,7 +65,5 @@ namespace PointOfSaleSettings
         }
 
         #endregion
-
-        private FerPROJ.FerCONTROLS.CustomLabelTitle customLabelTitle1;
     }
 }
